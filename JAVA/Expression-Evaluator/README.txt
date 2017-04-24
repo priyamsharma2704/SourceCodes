@@ -1,0 +1,10 @@
+Project Description:
+For this project, you will implement a core part of a calculator that for a given sequence
+of computation (e.g. “5 + 3 * 12 / 25”), your program is able to analyze the expression
+string by extracting out numbers or operators, and finally compute the result if the input
+is a valid expression. To achieve this goal, you will use the “Stack” class to store those
+data and process them properly. The detailed instructions are given as below.
+
+
+MyStack and ProcessStack are in package "Calculation"
+Main is in package "test"

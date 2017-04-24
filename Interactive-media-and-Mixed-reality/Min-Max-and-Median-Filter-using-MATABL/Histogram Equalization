@@ -1,0 +1,69 @@
+%This is a matlab script function which reads ,converts a colour image into gray scale
+%image and performs histogram equalization on gray scale image.
+
+%Do find some examples where histogram equalization achieves the worse
+%results. Please discuss the pros and cons of histogram equalization
+%method.
+
+clc;
+clear all;
+close all;
+
+image_colour=imread('singapore.jpg');
+figure('name','Sourceimages')
+subplot(1,2,1);imshow(image_colour);
+title('Colour image');
+
+%image_gray=(image_colour); 
+image_gray=rgb2gray(image_colour); %converting from rgb to gray scale
+subplot(1,2,2);imshow(image_gray);
+title('Gray image (rgb2gray)');
+
+pixel_num=size(image_gray,1)*size(image_gray,2); %no of rows & columns
+final_image=uint8(zeros(size(image_gray,1),size(image_gray,2)));%final value of same input size
+freq=zeros(256,1);%column vector with 256 intenisty
+pdf=zeros(256,1);
+cdf=zeros(256,1);%intermediate variable to store values during calculation
+cc=zeros(256,1);
+temp=zeros(256,1);
+
+%freq counts the occurrence of each pixel value.
+%The probability of each occurrence is calculated by pdf.
+
+for i=1:size(image_gray,1)
+    for j=1:size(image_gray,2)
+        value=image_gray(i,j); %intensity value indexed by i & j
+        freq(value+1)=freq(value+1)+1; 
+        pdf(value+1)=freq(value+1)/pixel_num; %cal pdf value
+    end
+end
+
+some=0;
+no_bins=255; %256-1
+
+%The culative distribution probability is calculated. 
+
+for i=1:size(pdf)
+   some=some+freq(i); %sum of all frequency
+   cc(i)=some; 
+   cdf(i)=cc(i)/pixel_num; %calculating cdf
+   temp(i)=round(cdf(i)*no_bins);%final temp with rounding value 
+end
+
+%image intensity range from 0-255 & indexing ranges from 1-256
+for i=1:size(image_gray,1)
+    for j=1:size(image_gray,2)
+            final_image(i,j)=temp(image_gray(i,j)+1); %assigning final values accordingly
+    end
+end
+
+figure('name','Histogram equalization') %displaying the result for comparision
+subplot(1,2,1); imshow(final_image);
+title('Designed Histogram equalization');
+he=histeq(image_gray);
+subplot(1,2,2); imshow(he);
+title('Histogram equalization using HISTEQ');
+
+www = abs(double(final_image) - double(image_gray)); %error checking
+error_rate = sum(www(:))/length(www(:));
+

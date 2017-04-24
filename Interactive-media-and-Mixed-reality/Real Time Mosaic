@@ -1,0 +1,172 @@
+#In this project, you will implement an efficient and easy-to-use software tool to mask people’s face from camera video streams. 
+#The details about this software prototype are as follows:
+
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv/cv.h>
+#include <iostream>
+#include <stdio.h>
+#include <opencv2/core/core.hpp> 
+#include <opencv2/imgproc/imgproc.hpp>
+ 
+using namespace cv;
+Mat frame;
+int xPointOne(0), xPointTwo(0), yPointOne(0), yPointTwo(0);
+int drag=0;
+int select_flag=0;
+int blur_degr(5);
+int pixel_sum[3];
+int pixel_avg[3];
+void blur();
+void checkPoints();
+void do_blur(const int x, const int y);
+void findAverage(const int x, const int y);
+void onMouse(int event, int x, int y, int flags, void * userdata);
+ 
+int main()
+{
+	VideoCapture camera(0);		//0 means the first camera connected to computer
+	camera >> frame;	//store a single image from  video stream to variable called "frame"
+	namedWindow("Output");                //tells opencv you will create a window called "Output"
+	setMouseCallback("Output", onMouse, NULL);
+    while (true)
+    {
+		camera >> frame;
+		resize(frame, frame, Size(frame.cols / 2, frame.rows / 2));  		
+		blur();
+		imshow("Output", frame);	
+		char c = waitKey(1);
+		switch (c)
+        {
+                case 27:
+                        return 0;
+                case 'r':	// to reset the frame
+                case 'R':                        
+                        xPointOne = xPointTwo = yPointOne = yPointTwo = 0;
+						blur_degr=5;
+                        break;
+                case 'i':	// to increase the blur degree by 5
+                case 'I':
+                        if (blur_degr < 5)
+                                blur_degr++;
+                        else
+                                blur_degr += 5;
+                        printf("Blur degree increased to: %d\n", blur_degr);
+                        break;
+                case 'd':	//to decrease the blur degree by 5
+                case 'D':
+                        if (blur_degr <= 5 && blur_degr > 1)
+                                blur_degr--;
+                        else if (blur_degr == 1)
+                                blur_degr = 1;
+                        else
+                                blur_degr -= 5;
+ 
+                        printf("Blur degree decreased to: %d\n", blur_degr);
+                        break;
+				case 's':	// to save the current frame
+                case 'S':
+                        imwrite("D:\\test1.jpg", frame);						
+                        printf("Image saved at D:\\test1.jpg\n");
+                        break;
+                
+                default:
+                        continue;
+                }
+        }
+        return 1;
+} // end main
+ 
+void onMouse(int event, int x, int y, int flags, void* userdata) //event like mouse button down, button up, mouse movement
+{
+    if (event == CV_EVENT_LBUTTONDOWN && !drag)
+    {
+        //Left button clicked and region of interest selection begins /
+        xPointOne = x;
+        yPointOne = y;
+		drag = 1;
+    }
+     
+    if (event == CV_EVENT_MOUSEMOVE && drag)
+    {
+       //Left mouse button clicked and the mouse is being moved
+	   xPointTwo = x;
+       yPointTwo = y; 
+       Point x1(xPointOne,yPointOne);
+	   Point x2(xPointTwo,yPointTwo);
+	   rectangle(frame, x1, x2, CV_RGB(100, 0, 0), 1, 8, 0);	//drawing the rectangle 
+	   imshow("Output",frame);
+	}    
+     
+    if (event == CV_EVENT_LBUTTONUP)
+    {
+		//Left mouse button released and region is final locked
+        select_flag = 1;
+        drag = 0;
+		checkPoints();
+		blur();
+		imshow("Output", frame);
+	}        
+}
+
+//function to swap the point incase if the rectangle is drawn from right to left
+void checkPoints()
+{
+        if (xPointOne > xPointTwo)
+                std::swap(xPointOne, xPointTwo);
+        if (yPointOne > yPointTwo)
+                std::swap(yPointOne, yPointTwo);
+} // end checkPoints
+ 
+//function to blur the region
+void blur()
+{
+        for (int i = yPointOne; i < yPointTwo; i += blur_degr)
+        {
+                for (int j = xPointOne; j < xPointTwo; j += blur_degr)
+                {
+                        findAverage(j, i);
+                        do_blur(j, i);
+ 
+                        for (int k = 0; k < 3; k++)
+                                pixel_avg[k] = pixel_sum[k] = 0;
+                }
+        }
+} // end blur
+ 
+
+//function to find th average of the pixels
+void findAverage(const int x, const int y)
+{
+        for (int i = 0; i < blur_degr; i++)
+        {
+                for (int j = 0; j < blur_degr; j++)
+                {
+					if ((y + i) < frame.rows && (x + j) < frame.cols)
+                        {
+                                pixel_sum[0] += frame.ptr<uchar>(y + i)[3 * (x + j)];
+                                pixel_sum[1] += frame.ptr<uchar>(y + i)[3 * (x + j) + 1];
+                                pixel_sum[2] += frame.ptr<uchar>(y + i)[3 * (x + j) + 2];
+                        }
+                }
+        }
+ 
+        for (int k = 0; k < 3; k++)
+                pixel_avg[k] = pixel_sum[k] / (blur_degr * blur_degr);
+} // end findAverage
+ 
+////function to assign the average  value to the group of pixels
+void do_blur(const int x, const int y)
+{
+        for (int i = 0; i < blur_degr; i++)
+        {
+                for (int j = 0; j < blur_degr; j++)
+                {
+                        if ((y + i) < yPointTwo && (x + j) < xPointTwo)
+                        {
+                                frame.ptr<uchar>(y + i)[3 * (x + j)] = pixel_avg[0];
+                                frame.ptr<uchar>(y + i)[3 * (x + j) + 1] = pixel_avg[1];
+                                frame.ptr<uchar>(y + i)[3 * (x + j) + 2] = pixel_avg[2];
+                        }
+                }
+        }
+} // end do_blur

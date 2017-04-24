@@ -1,0 +1,45 @@
+%Write a MATLAB script which reads, converts a color image into grayscale image, and performs the histogram equalization on 
+%the grayscale one. Note that you are not allowed to use histeq, instead you have to implement a function to do histogram equalization. 
+%Do find some examples where histogram equalization achieves the worse results. Please discuss the pros and cons of histogram equalization 
+%method.
+
+%Write a MATLAB script which reads, converts a color image into grayscale image, and performs min, max and median filtering on the 
+%grayscale image. Please discuss/elaborate on each filtering method (min, max, and median).
+
+%This is a matlab script function which reads ,converts a colour image into gray scale
+%image and applies Min, Max and Median filter on gray scale image.
+
+clc;
+clear all;
+close all;
+
+img_color=imread('singapore.jpg'); %reading the images
+img_gray=rgb2gray(img_color); %converting to gray scale
+
+img_min=zeros(size(img_gray)); %preallocate the output matrix for min
+img_max=zeros(size(img_gray)); %preallocate the output matrix for max
+
+modify_img_gray=padarray(img_gray,[1 1]);
+x=1:3;
+y=1:3;
+       
+for i= 1:size(modify_img_gray,1)-2
+    for j=1:size(modify_img_gray,2)-2
+        window=reshape(modify_img_gray(i+x-1,j+y-1),[],1);
+        %finding the min and max value in the window 
+        img_min(i,j)=min(window);
+        img_max(i,j)=max(window);
+    end
+end
+
+%converting the output matrix to 0-255 range
+img_min=uint8(img_min);
+img_max=uint8(img_max);
+
+img_mid=medfilt2(img_gray,[10 10]); %applying Median Filter
+
+figure('name','Result Images'); % displaying the output of min and max
+subplot(2,2,1); imshow(img_color),title('Original Image');
+subplot(2,2,2); imshow(img_min),title('Image after min filtering');
+subplot(2,2,3); imshow(img_max),title('Image after max filtering');
+subplot(2,2,4); imshow(img_mid),title('Image after median filtering, window size 10');

@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+	-fx-background-color: #797983; -fx-padding: 20; -fx-font-size: 20;
+}
+.button{
+	-fx-background-color: #109910
+}
+.textField{
+	-fx-background-color: #109910
+}
