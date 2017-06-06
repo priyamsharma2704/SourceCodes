@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="myModule">
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body ng-controller="myController">
+
+    	
+<!-- ng-repeat -->
+Select View
+<select ng-model="employeeView">
+	<option value="EmployeeTable.html">Table</option>
+	<option value="EmployeeList.html">List</option>
+</select>
+<br/><br/>
+<div ng-include="employeeView"></div>
+
+	
+
+
+
+    
+</body>
+</html>
+
+

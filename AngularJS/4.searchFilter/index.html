@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="myModule">
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body ng-controller="myController">
+
+    	
+<!-- ng-repeat -->
+Search : 
+<input type="text" placeholder="Search Employees" ng-model="searchText" />
+<!--  If we want to search in any particular column
+			<input type="text" placeholder="Search Employees" ng-model="searchText.firstName" />
+-->
+<input type="checkbox" ng-model="hideSalary" />Hide Salary<br/><br/>
+
+<br><br>
+	<table>
+		<thead>
+			<tr>
+				<th>F Name</th>
+				<th>L Name</th>
+				<th>Gender</th>
+				<th ng-hide="hideSalary">Salary</th>
+				<th ng-show="hideSalary">Salary</th>
+			</tr>			
+		</thead>
+		<tbody>
+			<tr ng-repeat="employee in employees | filter:searchText" >		
+				<td>{{employee.firstName}}</td>
+				<td>{{employee.lastName}}</td>
+				<td>{{employee.gender}}</td>
+				<td ng-hide="hideSalary">{{employee.salary}}</td>
+				<td ng-show="hideSalary">####</td>
+				
+			</tr>
+		</tbody>
+	</table>
+
+
+	
+
+    
+</body>
+</html>
+
+
