@@ -1,0 +1,6 @@
+[
+	{"name":"Yushi","belt":"Black","rate":50,"available":true,"thumb":"images/yushi.png"},
+	{"name":"Katana","belt":"Red","rate":70,"available":true,"thumb":"images/Katana.png"},
+	{"name":"Lee","belt":"Orange","rate":95,"available":true,"thumb":"images/lee.png"},
+	{"name":"Shin","belt":"Blue","rate":100,"available":true,"thumb":"images/shin.png"}
+]
