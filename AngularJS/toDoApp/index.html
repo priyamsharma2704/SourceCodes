@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO DO APP </title>
+	<script src="angular.js"></script>
+	<script src="script.js"></script>
+	<style>
+		h1{
+			text-align: center;			
+		}
+		span.done-true{
+			color:gray;
+			font-style: italic;
+			text-decoration: line-through;	
+		}
+		span[contenteditable="true"]{
+			background: gray;
+		}
+		#displayTasks{
+			background: #F1EDEC;
+			border-radius: 8px;
+			width: 400px;
+			position: absolute;
+			margin: 50px 0 0 -200px;
+			left:50%;
+		}
+		#inputTask{
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myController">
+		<h1>Add a task!</h1>
+		<br/>
+		<input  id="inputTask" ng-model="task" ng-keyup="searchEnter()" type="text" style="display: block; margin: 0 auto; padding: 5px;font-size: 15px; width: 300px;">
+		<div id="displayTasks">
+			<ul>				
+				<li ng-repeat="oneTask in tasks track by $index" >
+					<input type="checkbox" ng-model="oneTask.status">
+					<span contenteditable="false" ng-dblclick="contentEdit(oneTask.taskMessage)" ng-keydown="submitChange(oneTask.taskMessage)" ng-model="oneTask.taskMessage" class="done-{{oneTask.status}}">
+						
+						{{oneTask.taskMessage}}
+					</span>
+					
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+</html>
