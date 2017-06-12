@@ -5,6 +5,8 @@
 	<script src="scripts/angular.js"></script>
 	<script src="scripts/app.js"></script>
 	<script src="controller/myController.js"></script>
+    <script src="controller/quizController.js"></script>
+    <script src="factories/quizMetrics.js"></script>
 	<link rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
@@ -22,9 +24,21 @@
 
             </h3>
         </div>
-        <div ng-controller="myController as list">
+        <div ng-controller="myController as list" ng-hide="list.quizMetrics.quizActive">
+        <form class="form-inline well well-sm clearfix">
+                <span class="glyphicon glyphicon-search"></span>
+                <input 
+                    type="text" 
+                    placeholder="Search..." 
+                    class="form-control"
+                    ng-model="list.search">
+                <button class="btn btn-warning pull-right"             
+                    ng-click="list.activateQuiz()">
+                    <strong>Start Quiz</strong>
+                </button>
+            </form>
         	<div class="row">
-        		<div class="col-sm-6" ng-repeat="turtle in list.data">
+        		<div class="col-sm-6" ng-repeat="turtle in list.data | filter:list.search">
         			<div class="well well-sm">
     					<div class="row">
     						<div class="col-md-6">
@@ -60,16 +74,26 @@
         							<img ng-src="{{list.activeTurtle.image_url}}" class="img-rounded img-responsive">
         						</div>        						
         					</div>
-        					<div class="row">
+        					<div class="row top-buffer">
         						<div class="col-md-6">
         							<p><strong>Locations</strong>{{list.activeTurtle.locations}}</p>
-        							
+                                    <p><strong>Size:</strong>{{list.activeTurtle.size}}</p>
+                                    <p><strong>Average Lifespan:</strong>{{list.activeTurtle.lifespan}}</p>
+                                    <p><strong>Diet:</strong>{{list.activeTurtle.diet}}</p>			
         						</div>
+                                <div class="col-xs-12 top-buffer">
+                                    <p>{{list.activeTurtle.description}}</p>
+                                    <button class="btn btn-danger pull-right" 
+                                    data-dismiss="modal">Close</button>
+                                </div>
         					</div>        					
         				</div>        				
         			</div>        			
         		</div>        		
         	</div>
+            <div ng-controller="quizController as quiz">
+                
+            </div>
         </div>
     </div>
 

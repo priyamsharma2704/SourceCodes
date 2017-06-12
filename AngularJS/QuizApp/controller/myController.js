@@ -2,17 +2,24 @@
 angular
 	.module('quizApp', )
 	.controller('myController', ListController);
+	ListController.$inject = ['quizMetrics'];
 
-	function ListController(){
+	function ListController(quizMetrics){
 		var vm = this;
+		vm.quizMetrics = quizMetrics;
 		vm.data = turtlesData;
 		vm.activeTurtle = {};
-		vm.changeActiveTurtle = changeActiveTurtle();
+		vm.changeActiveTurtle = changeActiveTurtle;
+		vm.activateQuiz = activateQuiz;
+		vm.search = "";
+		
 
 		function changeActiveTurtle(index){
 			vm.activeTurtle = index;
-			console.log(index);
-			console.log(vm.activeTurtle);
+			
+		}
+		function activateQuiz(){
+			quizMetrics.changeState(true);
 		}
 	}
 	var turtlesData = [
