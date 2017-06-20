@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="person" class="test1.Person">
+		<constructor-arg name="id" type="int" value="11" index="0"></constructor-arg>
+		<constructor-arg value="Priyam" name="name" type="String"
+			index="1">
+		</constructor-arg>
+		
+		<property name="taxId" value="1234"></property>
+		<property name="add" ref="address"></property>
+	</bean>
+
+	<bean id="address" class="test1.Address">
+		<constructor-arg name="street" value="firewood drive"
+			type="String">
+		</constructor-arg>
+		<constructor-arg name="pinCode" value="45419"></constructor-arg>
+	</bean>
+</beans>
