@@ -1,0 +1,6 @@
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.exe.config
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.csprojResolveAssemblyReference.cache
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.exe
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\bin\Debug\PropertiesDemo.pdb
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.exe
+D:\Tutorials\SourceCodes\Dot Net\PropertiesDemo\PropertiesDemo\obj\Debug\PropertiesDemo.pdb
