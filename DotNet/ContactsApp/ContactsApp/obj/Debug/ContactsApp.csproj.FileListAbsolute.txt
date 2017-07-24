@@ -1,0 +1,11 @@
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\bin\Debug\ContactsApp.exe.config
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\bin\Debug\Contacts.mdf
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\bin\Debug\Contacts_log.ldf
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\bin\Debug\ContactsApp.exe
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\bin\Debug\ContactsApp.pdb
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.csprojResolveAssemblyReference.cache
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.Form1.resources
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.Properties.Resources.resources
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.csproj.GenerateResource.Cache
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.exe
+D:\Tutorials\SourceCodes\DotNet\ContactsApp\ContactsApp\obj\Debug\ContactsApp.pdb

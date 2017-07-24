@@ -1,0 +1,9 @@
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\bin\Debug\WebBrowserApp.exe.config
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\bin\Debug\WebBrowserApp.exe
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\bin\Debug\WebBrowserApp.pdb
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.csprojResolveAssemblyReference.cache
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.Form1.resources
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.Properties.Resources.resources
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.csproj.GenerateResource.Cache
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.exe
+D:\Tutorials\SourceCodes\Dot Net\WebBrowserApp\WebBrowserApp\obj\Debug\WebBrowserApp.pdb

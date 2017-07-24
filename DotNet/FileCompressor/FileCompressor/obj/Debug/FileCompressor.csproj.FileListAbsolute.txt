@@ -1,0 +1,11 @@
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\bin\Debug\FileCompressor.exe.config
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\bin\Debug\FileCompressor.exe
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\bin\Debug\FileCompressor.pdb
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\bin\Debug\DotNetZip.dll
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\bin\Debug\DotNetZip.xml
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.csprojResolveAssemblyReference.cache
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.Form1.resources
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.Properties.Resources.resources
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.csproj.GenerateResource.Cache
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.exe
+D:\Tutorials\SourceCodes\Dot Net\FileCompressor\FileCompressor\obj\Debug\FileCompressor.pdb
