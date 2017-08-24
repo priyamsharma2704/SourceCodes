@@ -1,0 +1,5 @@
+Testing framework: Mocha
+Assertion library : Chai
+
+-Command to run test-
+npm run test

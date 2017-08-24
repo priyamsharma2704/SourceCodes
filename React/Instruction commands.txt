@@ -1,0 +1,4 @@
+1. npm install -g create-react-app
+2. create-react-app app-name
+3. cd app-name
+4.npm start

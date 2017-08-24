@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+	<title>Practise</title>
+	<script src="angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body ng-controller="myController">
+	<input type="text" ng-model="message">
+	<br>
+	{{message}}
+	<br><br>
+	Search:
+	<input type="text" name="text" ng-model="search">
+	<br><br>
+	Sort By:
+	<select ng-model="sortList">
+		<option value="name">Name</option>
+		<option value="city"> City</option>
+		<option value="age" >Age</option>
+		
+	</select>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>City</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat= "person in people | orderBy:sortList | filter:search">
+				<td>{{person.name}}</td>
+				<td>{{person.city}}</td>
+				<td>{{person.age}}</td>
+			</tr>	
+
+		</tbody>
+	</table>
+
+
+	<ul>
+		<li ng-repeat="country in countries">
+			{{country.name}}
+			<ul ng-repeat= "city in country.cities">
+				<li>{{city.name}} - Parent Index {{$parent.$index}} - Index {{$index}}</li>
+			</ul>
+		</li>
+	</ul>
+
+	<table>
+
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Speciality</th>
+				<th>Practice Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="p in personData">
+				<td>{{p.first_name}} {{p.last_name}}</td>
+				<td>{{p.email_address}}</td>
+				<td>{{p.specialty}}</td>
+				<td>{{p.practice_name}}</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

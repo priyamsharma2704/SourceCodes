@@ -1,0 +1,1 @@
+header footer components. and two way data binding explained.
