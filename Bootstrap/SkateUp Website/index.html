@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-4.0.0-beta-dist\css\bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 
   </head>
@@ -85,7 +86,128 @@
           <div class="col"></div>
         </div>
       </div>
+      <!-- Section 2 -->
+      <div class="sectionDark">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 offset-md-2">
+            <img class="img-fluid" src="assets/skateboard.png">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-9">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <img class="img-fluid" src="assets/bolt.png">
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="wrapper">
+              <button type="button" class="btn btn-md btn-danger wrapperBtn" data-toggle="modal" data-target="#coolStuffModal">GET IT!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionLight">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                <img src="assets/11.jpg" class="img-fluid img-center">
+                <div class="button">
+                  <div class="col-sm-12">
+                    <button type="button" class="btn btn-md btn-danger btn-center">Kick Flip</button>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <img src="assets/22.jpg" class="img-fluid img-center">
+                  <div class="button">
+                    <div class="col-sm-12">
+                      <button type="button" class="btn btn-md btn-danger btn-center">360 Flip</button>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4">
+                    <img src="assets/33.jpg" class="img-fluid img-center">
+                    <div class="button">
+                      <div class="col-sm-12">
+                        <button type="button" class="btn btn-md btn-danger btn-center">BS Crook</button>
+                      </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contentLabel">Get exclusive content!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img class="img-fluid modal-img" src="assets/modal.png">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="modalFormWrapper">
+                      <form>
+                        <div class="form-group">
+                          <label class="form-control-label" for="forName">What's your name?</label>
+                          <input type="text" class="form-control" id="formName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-label" for="forEmail">Where's your crib</label>
+                          <input type="text" class="form-control" id="formEmail" placeholder="Email">
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="footer bg-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3 img-col">
+            <img src="assets/footer.png" class="img-fluid img-footer">
+          </div>
+          <div class="col-sm-9 col-lg-9 socialWrapper">
+            <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square fa-2x " aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
