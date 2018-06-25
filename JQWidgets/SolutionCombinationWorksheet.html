@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title id="Description">index Solution Combination</title>
+    <meta name="description" content="This is an example of AngularJS Grid. Grid is bound to Array data.">
+    <link rel="stylesheet" type="text/css" href="jqwidgets/styles/jqx.base.css" />
+    <script type="text/javascript" src="jqwidgets/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.storage.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.columnsresize.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.columnsreorder.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="jqwidgets/jqxnumberinput.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxangular.js"></script>
+    <script type="text/javascript" src="jQWidgets-master/scripts/demos.js"></script>
+    <script type="text/javascript" src="jQWidgets-master/scripts/generatedata.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //--------------------------Base Case Grid-------------------------//
+            var data = new Array();
+            var analysisTypes = "Static Structural";
+            var x = ["Name","Environment","Time/Frequency","Phase Angle"];
+            
+            for (var i = 0; i < 4; i++) {
+                var row = {};
+               
+                row["col1"] = "";
+                row["col2"] = "";
+                row["col3"] = x[i];
+                row["col4"] = "";
+                data[i] = row;
+            }
+
+            var baseCaseSource = {
+                localData: data,
+                dataType: "array",
+                dataFields:
+                [
+                    { name: 'col1', type: 'string' },
+                    { name: 'col2', type: 'string' },
+                    { name: 'col3', type: 'string' },
+                    { name: 'col4', type: 'string' }
+                ]
+            };
+
+            var BaseCaseDataAdapter = new $.jqx.dataAdapter(baseCaseSource);
+
+            var createGridEditor = function(row, cellValue, editor, cellText, width, height)
+            {
+                var index = $('#baseCasesGrid').jqxGrid('getcolumnindex', 4);
+                console.log(index);
+                // construct the editor.
+                if(row == 0){
+                    var inputElement = $("<input/>").prependTo(editor);
+                    inputElement.jqxInput({placeHolder:"Enter Name", width: width, height: height});
+                }
+                else if (row == 1) {
+                    editor.jqxDropDownList({autoDropDownHeight: true,  width: 120, source: ['Static Structural', 'Harmonic']});
+                }
+                else if(row == 2)
+                {
+                    editor.jqxNumberInput({ decimalDigits: 2, inputMode: 'simple',  width: width, height: height, spinButtons: true });
+                }
+                var count = $("#baseCasesGrid").jqxGrid('columns').records.length;
+                //console.log(count);
+            }
+
+            var initGridEditor = function (row, cellValue, editor, cellText, width, height) {
+                // set the editor's current value. The callback is called each time the editor is displayed.
+                if (row == 1) {
+                    editor.jqxDropDownList('selectItem', cellValue);
+                }
+            }
+
+            var gridEditorValue = function (row, cellValue, editor) {
+                //console.log(editor.val());
+                if(row == 0){
+                    //console.log(editor.find('input').val());
+                    return editor.find('input').val();
+                }
+                return editor.val();
+            }
+
+            var columnsBaseCaseGrid = [
+                    {text:'', dataField: 'col1', editable: false, width:'5%', pinned: true},
+                    {text:'', dataField: 'col2', editable: false, width:'20%', pinned: true},
+                    {text:'', dataField: 'col3', editable: false, width:'16%', pinned: true},
+                    {text:'Base Case', width:'10%', columntype: 'custom', createeditor: createGridEditor, initeditor: initGridEditor, geteditorvalue: gridEditorValue, datafield: 'col4', }
+                ];
+            
+            $('#baseCasesGrid').jqxGrid({
+                width: '50%',
+                source: BaseCaseDataAdapter,
+                editable: true,
+                columns: columnsBaseCaseGrid,
+                selectionmode: 'singlecell'
+            });
+
+            //-------------------------Combination Grid------------------------//
+            //var data = generatedata(20);
+            var combinationTypes =
+            [
+                "Linear","Quadratic"
+            ];
+
+            var columnsCombinationGrid = 
+                [
+                    { text: '#', sortable: false, filterable: false, editable: false, groupable: false, draggable: false, resizable: false, pinned: true, dataField: '', columntype: 'number', width: '5%',
+                                cellsrenderer: function (row, column, value) {
+                                    return "<div style='margin:4px;'>" + (value + 1) + "</div>";
+                                }
+                    },                       
+                    { text: 'Combination Name', placeHolder: "Combination ", sortable: false, filterable: false, pinned: true, editable: true, groupable: false, draggable: false, resizable: false, dataField: 'cn', columntype: 'text', width: '20%',
+                                //cellsrenderer: function (row, column, value) {
+                                    //return "<div style='margin:4px;'>Combination " + (value + 1) + "</div>";
+                                //}
+                    },
+                    { text: 'Type', columntype: 'dropdownlist', datafield: 'combinationType', width: '16%', pinned: true, 
+                        createeditor: function (row, column, editor) 
+                        {
+                            // assign a new data source to the dropdownlist.
+                            var list = combinationTypes;
+                            editor.jqxDropDownList({ autoDropDownHeight: true, source: list });
+                        },
+                        // update the editor's value before saving it.
+                        cellvaluechanging: function (row, column, columntype, oldvalue, newvalue) 
+                        {
+                            // return the old value, if the new value is empty.
+                            if (newvalue == "") return oldvalue;
+                        }
+                    },
+                    { text :'Value', dataField : 'col', width:'10%',columntype: 'numberinput', cellsformat: 'd'}
+                ];
+            var combinationSource = {};
+            var generaterow = function (i) {
+                var row = {};
+                row['cn'] = "Combination " + i;
+                row["combinationType"] = combinationTypes[0];
+                return row;
+            }
+
+            // var cellsrenderer = function (row, columnfield, value, defaulthtml, columnproperties) {
+            //     return '<span style="position: relative; width: 100%; margin: 4px; float: ' + columnproperties.cellsalign + ';">' + value + '<img src="DownArrow.gif" style="position: absolute; right: 5px;" /></span>';
+            // }
+
+            var CombinationGridDataAdapter = new $.jqx.dataAdapter(combinationSource);
+            $("#combinationGrid").jqxGrid({
+                width: '50%',
+                source: CombinationGridDataAdapter,
+                editable: true,
+                selectionmode: 'singlecell',
+                columns: columnsCombinationGrid
+                
+            });
+            var rs = 0;
+            if(rs > 0)
+            {
+                for(var i = 0;i <rs;i++)
+                {
+                    var combinationNameCounter = i+1;                    
+                    var datarow = generaterow(combinationNameCounter);
+                    var commit = $("#combinationGrid").jqxGrid('addrow', null, datarow);
+                    combinationNameCounter = combinationNameCounter + 1;
+                }
+                $("#btn_AddRow").on('click', function () {
+                            var datarow = generaterow(combinationNameCounter);
+                            var commit = $("#combinationGrid").jqxGrid('addrow', null, datarow);
+                            combinationNameCounter = combinationNameCounter + 1;
+                });
+            }
+            else
+            {
+                var combinationNameCounter = 1;
+                $("#btn_AddRow").on('click', function () {
+                            var datarow = generaterow(combinationNameCounter);
+                            var commit = $("#combinationGrid").jqxGrid('addrow', null, datarow);
+                            combinationNameCounter = combinationNameCounter + 1;
+                });
+            }
+            
+
+            var name1 = "col";
+            var name2 = "col";
+            $('#btn_AddColumn').click(function (event) {
+
+                var count = $("#baseCasesGrid").jqxGrid('columns').records.length;
+                var r = $('#baseCasesGrid').jqxGrid('getrows');
+                //console.log(r);
+                count = count + 1;
+
+                name1 = name1 + count ;
+                columnsCombinationGrid.push({ text: 'Value', datafield: name1, width: '10%', columntype: 'numberinput', cellsformat:'d' });
+                $("#combinationGrid").jqxGrid({ columns: columnsCombinationGrid });
+                $("#combinationGrid").jqxGrid("render");
+                name1 = "col";
+
+                
+                name2 = name2 + count ;
+                columnsBaseCaseGrid.push({text:'Base Case', datafield: name2, width:'10%', columntype: 'custom', createeditor: createGridEditor, initeditor: initGridEditor, geteditorvalue: gridEditorValue});
+                $("#baseCasesGrid").jqxGrid({ columns: columnsBaseCaseGrid });
+                $("#baseCasesGrid").jqxGrid("render");
+                name2 = "col";
+
+            });
+
+
+            $('#combinationGrid').jqxGrid({ rowsheight: 20});
+            $('#baseCasesGrid').jqxGrid({ rowsheight: 20});
+
+            $('#combinationGrid').jqxGrid({ height: 300});
+            $('#baseCasesGrid').jqxGrid({ height: 125 });
+
+            // var state = null;
+            // $("#btn_Save").click(function () {
+            //     // save the current state of jqxGrid.
+            //     console.log("save");
+            //     state = $("#combinationGrid").jqxGrid('savestate');
+            // })
+            // ;
+            // $("#btn_Load").click(function () {
+            //     // load the Grid's state.
+            //     console.log("load");
+            //     console.log(state);
+            //     if (state) {
+            //         $("#combinationGrid").jqxGrid('loadstate', state);
+            //     }
+            //     else {
+            //         $("#combinationGrid").jqxGrid('loadstate');
+            //     }
+            // });
+
+            $('#baseCasesGrid').on('cellvaluechanged', function (event) {
+                //console.log(event);
+                console.log("Col #: "+args.datafield);
+                console.log("Row #: "+args.rowindex);
+                console.log("New Val : "+args.newvalue);
+            });
+            $('#combinationGrid').on('cellvaluechanged', function (event) {
+                console.log("Col #: "+args.datafield);
+                console.log("Row #: "+args.rowindex);
+                console.log("New Val : "+args.newvalue);
+            });
+            
+
+            //$("#baseCasesGrid").jqxGrid('setcellvalue', 1, "col4", "harmonic");
+
+        });
+    </script>
+</head>
+<style type="text/css">
+    .jqx-grid-header
+        {
+            height: 26px !important;     
+        }
+</style>
+<body>
+    <div id="baseCasesGrid"></div>
+    <div id="combinationGrid"></div>
+    <br />
+    <div>
+        <input type="button" name="AddR" id="btn_AddRow" value="Add Row">
+        <input type="button" name="AddC" id="btn_AddColumn" value="Add Column">
+       <!--  <input type="button" name="Save" id="btn_Save" value="Save">
+        <input type="button" name="Load" id="btn_Load" value="Load"> -->
+    </div>
+</body>
+</html>
