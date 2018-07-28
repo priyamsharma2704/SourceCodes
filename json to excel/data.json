@@ -1,0 +1,4879 @@
+{
+	"gstin": "07AADFR6760P1ZK",
+	"fp": "032018",
+	"b2b": [{
+		"ctin": "03AABCA6200A1ZT",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 70.25
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 1405,
+					"iamt": 70.25
+				}
+			}],
+			"val": 1405,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P712657",
+			"chksum": "0e8413228cb9fb2bc92bed6ee4c366c39e7b1132dd132a359c2071fafffda134"
+		}]
+	}, {
+		"ctin": "03AKKPA1470E1ZU",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 13561.24
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 271224.8,
+					"iamt": 13561.24
+				}
+			}],
+			"val": 284786,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "432",
+			"chksum": "649515e6e95138c80539b0ac86aae8b79da7b4116a35cec3ae4d3627a44986a4"
+		}]
+	}, {
+		"ctin": "07AAEPG7516P1ZD",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 37400,
+					"tx_s": 37400
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 37400,
+					"rt": 5,
+					"txval": 1496000,
+					"camt": 37400
+				}
+			}],
+			"val": 1570800,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "378",
+			"chksum": "ffed42b2c490a80f709bc357afc89a1c655f76dca8c0aaf73469ada3624d9325"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 62500,
+					"tx_s": 62500
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 62500,
+					"rt": 5,
+					"txval": 2500000,
+					"camt": 62500
+				}
+			}],
+			"val": 2625000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "383",
+			"chksum": "acf7c60c8d37fa1ddba6ab7f72b20048c95a39277766326f509a204c092fbf5c"
+		}]
+	}, {
+		"ctin": "32CAOPS1423F1ZV",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 4817
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 96330,
+					"iamt": 4817
+				}
+			}],
+			"val": 101147,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "067",
+			"chksum": "acbc0f44d307ab28d165cdbd8de3fdd3624e106812e5d868d8a652f17506cbb7"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 5178
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 103550,
+					"iamt": 5178
+				}
+			}],
+			"val": 108728,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "068",
+			"chksum": "955f0cd5d4d43d7763be05cc5e34fce63570ba15ef8d1055c2d370f370a2d47d"
+		}]
+	}, {
+		"ctin": "07AAWFA0438N1ZZ",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 190.62,
+					"tx_s": 190.62
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 190.62,
+					"rt": 5,
+					"txval": 7624.8,
+					"camt": 190.62
+				}
+			}],
+			"val": 8006,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "23-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "00278/2017-18",
+			"chksum": "d2f984baa8ea7d84b17654470bcc2f7660ebd22ee994a7315664d9f84f2304d9"
+		}]
+	}, {
+		"ctin": "07AAAPE4198H1ZS",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 424.96,
+					"tx_s": 424.96
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 424.96,
+					"rt": 5,
+					"txval": 16998.4,
+					"camt": 424.96
+				}
+			}],
+			"val": 17848,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "535",
+			"chksum": "9770a9f1acb1fbf4e64c93129486523fd71ed846b0b3700281de69585bfbb71a"
+		}]
+	}, {
+		"ctin": "21AHIPA8684K1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 16892.5
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 337850,
+					"iamt": 16892.5
+				}
+			}],
+			"val": 354742.5,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "24",
+			"chksum": "67dc88f09c8cb55282a8d630bf756070e1dfca2bbee92c00caef8e970728dfcf"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 16375
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 327500,
+					"iamt": 16375
+				}
+			}],
+			"val": 343875,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "25",
+			"chksum": "0c3e8295f42d418a7ac96b0f3e15e1f7e5fcdacf1f281967a707e828b1fcb280"
+		}]
+	}, {
+		"ctin": "07AAACH2702H1Z2",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 140.22,
+					"tx_s": 140.22
+				},
+				"itm_det": {
+					"samt": 140.22,
+					"rt": 18,
+					"txval": 1558.04,
+					"camt": 140.22
+				}
+			}],
+			"val": 1838.48,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "FCU1807411763218",
+			"chksum": "1ea62069a4a18e3e9cca4104946ebc4447ed92d4c9159745e43047d77e20d989"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 90,
+					"tx_s": 90
+				},
+				"itm_det": {
+					"samt": 90,
+					"rt": 18,
+					"txval": 1000,
+					"camt": 90
+				}
+			}],
+			"val": 1180,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "FCU1807411767847",
+			"chksum": "bf177835ced11efb2c3814733d942c0c47b2a77443fa2630f436ed7026c8119a"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 90,
+					"tx_s": 90
+				},
+				"itm_det": {
+					"samt": 90,
+					"rt": 18,
+					"txval": 1000,
+					"camt": 90
+				}
+			}],
+			"val": 1180,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "FCU1807411767881",
+			"chksum": "0424e0d954e79f49003d655a0d8969173cdc84867656a7f7005438f7a97565ff"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 418.57,
+					"tx_s": 418.57
+				},
+				"itm_det": {
+					"samt": 418.57,
+					"rt": 18,
+					"txval": 4650.76,
+					"camt": 418.57
+				}
+			}],
+			"val": 5487.9,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "FCU1807411767882",
+			"chksum": "4df6025d510b065c010a223e7c28885a80979eb34818c17da96da0cd184aa719"
+		}]
+	}, {
+		"ctin": "07AABCA6200A1ZL",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 466.25,
+					"tx_s": 466.25
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 466.25,
+					"rt": 5,
+					"txval": 18650,
+					"camt": 466.25
+				}
+			}],
+			"val": 18650,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766820",
+			"chksum": "6dc7b9e7d9af855efcc95094261caa6408b362fa45a16dfb4e539e799a3054bd"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 105.83,
+					"tx_s": 105.83
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 105.83,
+					"rt": 5,
+					"txval": 4233,
+					"camt": 105.83
+				}
+			}],
+			"val": 4233,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766851",
+			"chksum": "f542cb0b6ac1360a348608c2cbd6f4c7733177f7d78d9c7df287bcb93bbf7b5c"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 196.05,
+					"tx_s": 196.05
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 196.05,
+					"rt": 5,
+					"txval": 7842,
+					"camt": 196.05
+				}
+			}],
+			"val": 7842,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766852",
+			"chksum": "46e462cef6778732669958df8fcc2f35cf75528c382ac88d77a6248621dfa348"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 851,
+					"tx_s": 851
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 851,
+					"rt": 5,
+					"txval": 34040,
+					"camt": 851
+				}
+			}],
+			"val": 34040,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766853",
+			"chksum": "8d1cbea83b18e5be17dce5c16fc626bcbe50e197e7c5b91df4ef16eb3703efe4"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 239.8,
+					"tx_s": 239.8
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 239.8,
+					"rt": 5,
+					"txval": 9592,
+					"camt": 239.8
+				}
+			}],
+			"val": 9592,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766931",
+			"chksum": "232653b8714a44284e805b05c0720b6acd25f7baa49242172d8620956c187ef1"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 54.95,
+					"tx_s": 54.95
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 54.95,
+					"rt": 5,
+					"txval": 2198,
+					"camt": 54.95
+				}
+			}],
+			"val": 2198,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P766932",
+			"chksum": "c5fa8002671f1bdb8af628c7e94db615c8ebca9de241ed998cae2cc8e28476d9"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 119.9,
+					"tx_s": 119.9
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 119.9,
+					"rt": 5,
+					"txval": 4796,
+					"camt": 119.9
+				}
+			}],
+			"val": 4796,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794123",
+			"chksum": "6bc59eec562d3da640ac000ecd9b826dc520db0db0d39e35e01a8ff2246138b9"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 108.38,
+					"tx_s": 108.38
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 108.38,
+					"rt": 5,
+					"txval": 4335,
+					"camt": 108.38
+				}
+			}],
+			"val": 4335,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794124",
+			"chksum": "9475cdad96c6a4c66d2c6a153dfb904423b26189a9e31e44682df5ae9cd354a9"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 73.6,
+					"tx_s": 73.6
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 73.6,
+					"rt": 5,
+					"txval": 2944,
+					"camt": 73.6
+				}
+			}],
+			"val": 2944,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794125",
+			"chksum": "62b4e447ccb7c1c929add413e3c9e0193dabebd08f766ea445e29996cf29b998"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 848.13,
+					"tx_s": 848.13
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 848.13,
+					"rt": 5,
+					"txval": 33925,
+					"camt": 848.13
+				}
+			}],
+			"val": 33925,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794268",
+			"chksum": "057a1e97d0a5432bdd17adff3b554b16e217d6df3c860bfa4c4c14f60c0f5c94"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 110.25,
+					"tx_s": 110.25
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 110.25,
+					"rt": 5,
+					"txval": 4410,
+					"camt": 110.25
+				}
+			}],
+			"val": 4410,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794294",
+			"chksum": "362ec5035ca7479350ee58ea14cc71c899284a2f89f7c3aebbaa6bb594bc706b"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 125.48,
+					"tx_s": 125.48
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 125.48,
+					"rt": 5,
+					"txval": 5019,
+					"camt": 125.48
+				}
+			}],
+			"val": 5019,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794295",
+			"chksum": "b646c6b98290a42939e0e225fb1104198089f27478b20a6230b748aacea418ed"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 66.15,
+					"tx_s": 66.15
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 66.15,
+					"rt": 5,
+					"txval": 2646,
+					"camt": 66.15
+				}
+			}],
+			"val": 2646,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794296",
+			"chksum": "d58b952c89273081fa849f72a7a4c586e33ce13b17ce4d708ac54b6d400c11c1"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 266,
+					"tx_s": 266
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 266,
+					"rt": 5,
+					"txval": 10640,
+					"camt": 266
+				}
+			}],
+			"val": 10640,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "P794474",
+			"chksum": "94ae9b3b4d3e4bf2fcc53f5865d0b83ef5d99b9f228282d9b89d7c0a5eb5516a"
+		}]
+	}, {
+		"ctin": "03AAACC1206D1ZQ",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 386.82,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 18,
+					"txval": 2149,
+					"camt": 0,
+					"iamt": 386.82
+				}
+			}],
+			"val": 2535.82,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "05-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "01131/A/050035",
+			"chksum": "a1030c5c8508d30d64c406d3e3b8b2f2bf829ce60cdb294c71da6043b7b48471"
+		}]
+	}, {
+		"ctin": "27APYPN2230E1ZR",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 16362
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 327250,
+					"iamt": 16362
+				}
+			}],
+			"val": 343612,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "35",
+			"chksum": "ededb1f52a3ecb84d1f80578850f0d22b48a5363c9ca54a1d3e709cb72332f63"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 19688
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 393750,
+					"iamt": 19688
+				}
+			}],
+			"val": 413438,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "44",
+			"chksum": "3e1394837940fb9bf931bd103751c629593b5ad194482384163cfa5ecc1c3552"
+		}]
+	}, {
+		"ctin": "07AALFM5884F1ZV",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 6214,
+					"tx_s": 6214
+				},
+				"itm_det": {
+					"samt": 6214,
+					"rt": 5,
+					"txval": 248560,
+					"camt": 6214
+				}
+			}],
+			"val": 260988,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "418",
+			"chksum": "24531ffb96b19c4190ab945716c5032da5e11841e75875c8ce3b4ff228b3c395"
+		}]
+	}, {
+		"ctin": "07AAAFJ4378E1ZG",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 697.1,
+					"tx_s": 697.1
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 697.1,
+					"rt": 5,
+					"txval": 27883.8,
+					"camt": 697.1
+				}
+			}],
+			"val": 29278,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1478",
+			"chksum": "1f01710841b989c5e7a555972a1118aa769cca5ee77431e377bf322e0de5288a"
+		}]
+	}, {
+		"ctin": "07AICPK7896E1ZY",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 5207,
+					"tx_s": 5207
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 5207,
+					"rt": 5,
+					"txval": 208280,
+					"camt": 5207
+				}
+			}],
+			"val": 218694,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "495",
+			"chksum": "9c93844ffd4ce787ec678f7a085bd41a8f0713abaf7944e61978fd1ac5748db8"
+		}]
+	}, {
+		"ctin": "03AAGFA8919C1ZS",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 693.9
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 3855,
+					"iamt": 693.9
+				}
+			}],
+			"val": 4549,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "ASC/CHA/4758/IMP",
+			"chksum": "cc59f0fc087405935d4a096e4950b4f938180ae5a6118f984c15c499311b865c"
+		}, {
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 0,
+					"iamt": 0
+				}
+			}],
+			"val": 0,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "31-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "ASC/CHA/5220/IMP",
+			"chksum": "948fcea3ad4056bb887319c0b8a495e5f9ed4d1cb8802bd045ab29191124c3cb"
+		}]
+	}, {
+		"ctin": "07CIKPS3228Q1ZH",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 42360,
+					"tx_s": 42360
+				},
+				"itm_det": {
+					"samt": 42360,
+					"rt": 12,
+					"txval": 706000,
+					"camt": 42360
+				}
+			}],
+			"val": 790720,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "02038",
+			"chksum": "c9fcca7b1d481befceda21932ffdc093cbe6011d9cecda558d3a78e77965f6c0"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 28312.5,
+					"tx_s": 28312.5
+				},
+				"itm_det": {
+					"samt": 28312.5,
+					"rt": 5,
+					"txval": 1132500,
+					"camt": 28312.5
+				}
+			}],
+			"val": 1189125,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2028",
+			"chksum": "6787518e9bb60c0a5eccaf9b117d21b58eece6aa0a068566a513a2140b2bb58a"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 37700,
+					"tx_s": 37700
+				},
+				"itm_det": {
+					"samt": 37700,
+					"rt": 5,
+					"txval": 1508000,
+					"camt": 37700
+				}
+			}],
+			"val": 1583400,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2041",
+			"chksum": "ff8044ffbe6d015c8c2121b1a0451a58d241be38192ec9fab4e545a7aff08cc7"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 9317,
+					"tx_s": 9317
+				},
+				"itm_det": {
+					"samt": 9317,
+					"rt": 5,
+					"txval": 372680,
+					"camt": 9317
+				}
+			}],
+			"val": 391314,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2044",
+			"chksum": "efa6f952157b408584eaac0f76cadc671886094cac193297d19911b9bb70c496"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 19250,
+					"tx_s": 19250
+				},
+				"itm_det": {
+					"samt": 19250,
+					"rt": 5,
+					"txval": 770000,
+					"camt": 19250
+				}
+			}],
+			"val": 808500,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2055",
+			"chksum": "8175213ec9e9fa0ede87e088d73e6b11df7e20a2f0c9be3884ec225f3b2f4db9"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 17500,
+					"tx_s": 17500
+				},
+				"itm_det": {
+					"samt": 17500,
+					"rt": 5,
+					"txval": 700000,
+					"camt": 17500
+				}
+			}],
+			"val": 735000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2058",
+			"chksum": "85105552592b7eadc7240c3e4ea62396a285bce22a8c5fc30558a1cd1129d0ba"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 28687.5,
+					"tx_s": 28687.5
+				},
+				"itm_det": {
+					"samt": 28687.5,
+					"rt": 5,
+					"txval": 1147500,
+					"camt": 28687.5
+				}
+			}],
+			"val": 1204875,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2066",
+			"chksum": "9b77f24d07c06f289b12c07437f1e48cb7d062c5b6586a0ac980e70dce4ff43c"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 48281.25,
+					"tx_s": 48281.25
+				},
+				"itm_det": {
+					"samt": 48281.25,
+					"rt": 5,
+					"txval": 1931250,
+					"camt": 48281.25
+				}
+			}],
+			"val": 2027813,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2076",
+			"chksum": "426caa9f807c0b687bf3527661b074436a8db5281246235838cb58025af37119"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 66300,
+					"tx_s": 66300
+				},
+				"itm_det": {
+					"samt": 66300,
+					"rt": 12,
+					"txval": 1105000,
+					"camt": 66300
+				}
+			}],
+			"val": 1237600,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2161",
+			"chksum": "0749c2b27474f8c622e021456f9698df74b6a6d10f08d2c93a8d611c8252a3c1"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 41305,
+					"tx_s": 41305
+				},
+				"itm_det": {
+					"samt": 41305,
+					"rt": 5,
+					"txval": 1652200,
+					"camt": 41305
+				}
+			}],
+			"val": 1734810,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2163",
+			"chksum": "6f66ccfb68b3da02daea5ad34edc1370b44650ca6b547033779b019453ce4e50"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 41470,
+					"tx_s": 41470
+				},
+				"itm_det": {
+					"samt": 41470,
+					"rt": 5,
+					"txval": 1658800,
+					"camt": 41470
+				}
+			}],
+			"val": 1741740,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2183",
+			"chksum": "5e0d9e59051accf25a63c1912a498ee7b2aab64815479ac79ccdf06b0b969bf1"
+		}]
+	}, {
+		"ctin": "07AEBPJ3236J1ZO",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 15500,
+					"tx_s": 15500
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 15500,
+					"rt": 5,
+					"txval": 620000,
+					"camt": 15500,
+					"iamt": 0
+				}
+			}],
+			"val": 651000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1894",
+			"chksum": "a33ea4d8f1286f31cba7ee3a086a60e053e7e3cfdf1e09b19a31995d2ff25ee7"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 28250,
+					"tx_s": 28250
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 28250,
+					"rt": 5,
+					"txval": 1130000,
+					"camt": 28250,
+					"iamt": 0
+				}
+			}],
+			"val": 1186500,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "26-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1922",
+			"chksum": "af6d695c37be018736a62edbb2053a1b6fa647a0a81128e625321f4352f9f975"
+		}]
+	}, {
+		"ctin": "07GHSPS8746A1ZO",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 36575.21,
+					"tx_s": 36575.21
+				},
+				"itm_det": {
+					"samt": 36575.21,
+					"rt": 5,
+					"txval": 1463008.2,
+					"camt": 36575.21
+				}
+			}],
+			"val": 1536159,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0100",
+			"chksum": "a7cd09644c1bcae927de15f6e9d0c8b74a52355c1867ee9868ac8167a67716ce"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 28089,
+					"tx_s": 28089
+				},
+				"itm_det": {
+					"samt": 28089,
+					"rt": 5,
+					"txval": 1123560,
+					"camt": 28089
+				}
+			}],
+			"val": 1179738,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0104",
+			"chksum": "f64501856dde93c07bb70a2409d2ab04cc30f5ffab6b60ecb59b7205447784a1"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 53400,
+					"tx_s": 53400
+				},
+				"itm_det": {
+					"samt": 53400,
+					"rt": 12,
+					"txval": 890000,
+					"camt": 53400
+				}
+			}],
+			"val": 996800,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0107",
+			"chksum": "dbf156b7742e3b80f7e55508a9d1424fd8cb566d02a1bad5bcb30068bc434b3c"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 47400,
+					"tx_s": 47400
+				},
+				"itm_det": {
+					"samt": 47400,
+					"rt": 12,
+					"txval": 790000,
+					"camt": 47400
+				}
+			}],
+			"val": 884800,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0109",
+			"chksum": "96c0f643143eee15b2248ecc68b4e9fda27b599bb13069fbfb2d054d543875f2"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 30956.63,
+					"tx_s": 30956.63
+				},
+				"itm_det": {
+					"samt": 30956.63,
+					"rt": 5,
+					"txval": 1238265,
+					"camt": 30956.63
+				}
+			}],
+			"val": 1300178,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0114",
+			"chksum": "a9b8a5b270b5a2ae3e2b232d6785b3d74723cb63f5cf94645101531eddb64709"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 59235,
+					"tx_s": 59235
+				},
+				"itm_det": {
+					"samt": 59235,
+					"rt": 12,
+					"txval": 987250,
+					"camt": 59235
+				}
+			}],
+			"val": 1105720,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0117",
+			"chksum": "d1ac3c8c0a635235afe1c7057c3dcee1f0f90ee88e5c61bd2b536855164c268c"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 36000,
+					"tx_s": 36000
+				},
+				"itm_det": {
+					"samt": 36000,
+					"rt": 12,
+					"txval": 600000,
+					"camt": 36000
+				}
+			}],
+			"val": 672000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0119",
+			"chksum": "7a46e79d04bc713e0feb6ef986e1efa0ea970e6a0ff3d735e8b328609353e62e"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 58800,
+					"tx_s": 58800
+				},
+				"itm_det": {
+					"samt": 58800,
+					"rt": 12,
+					"txval": 980000,
+					"camt": 58800
+				}
+			}],
+			"val": 1097600,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0129",
+			"chksum": "99be3eafc7acaeeb2d00ccd8f4311847e279e14f3fb62cfeb41ebde89fe6e2e5"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 30278.25,
+					"tx_s": 30278.25
+				},
+				"itm_det": {
+					"samt": 30278.25,
+					"rt": 5,
+					"txval": 1211130,
+					"camt": 30278.25
+				}
+			}],
+			"val": 1271687,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0134",
+			"chksum": "f7fd1f72448713683dfd7cd81260e9faafaba0e60011934ae2077eb37087eee9"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 29139.83,
+					"tx_s": 29139.83
+				},
+				"itm_det": {
+					"samt": 29139.83,
+					"rt": 5,
+					"txval": 1165593,
+					"camt": 29139.83
+				}
+			}],
+			"val": 1223873,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0143",
+			"chksum": "bf6aa6306ed9f71a38d32747d7c3fb288b2c1e334aaeff46a410b92a08862881"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 66300,
+					"tx_s": 66300
+				},
+				"itm_det": {
+					"samt": 66300,
+					"rt": 12,
+					"txval": 1105000,
+					"camt": 66300
+				}
+			}],
+			"val": 1237600,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0218",
+			"chksum": "65626a6f987d6d2bafb83082a4fcdcdc2663256d6628a8b0a10a3fffe4c3db65"
+		}]
+	}, {
+		"ctin": "07AAAPA4806C1ZJ",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 2425,
+					"tx_s": 2425
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 2425,
+					"rt": 5,
+					"txval": 97000.05,
+					"camt": 2425
+				}
+			}],
+			"val": 101850.05,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "779/2017-18",
+			"chksum": "73e89dffb6366c13196d9ed5f4d29b80ab618c48acabb95dda7d1b2444be8e8d"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 124528.13,
+					"tx_s": 124528.13
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 124528.13,
+					"rt": 5,
+					"txval": 4981125,
+					"camt": 124528.13
+				}
+			}],
+			"val": 5230181.25,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "24-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "787/2017-18",
+			"chksum": "0842cb51746c3ae5592c69c031871247315bddc6cc1468e1708cf8af34489744"
+		}]
+	}, {
+		"ctin": "07AABFP2032L1ZF",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 1233.69,
+					"tx_s": 1233.69
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 1233.69,
+					"rt": 5,
+					"txval": 49347.6,
+					"camt": 1233.69,
+					"iamt": 0
+				}
+			}],
+			"val": 51814.98,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "14-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST-379",
+			"chksum": "deb1af5b7a1c0545a5cf1e5088bb0f1ae408b4151d7c1099950855be324141f0"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 152.88,
+					"tx_s": 152.88
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 152.88,
+					"rt": 5,
+					"txval": 6115.24,
+					"camt": 152.88,
+					"iamt": 0
+				}
+			}],
+			"val": 6421,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "24-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST-384",
+			"chksum": "65dd292d6d9e7c9df7719fa4ad11f1ffbe46c17f625adb02118438602ec83429"
+		}]
+	}, {
+		"ctin": "06AAKPG3276G1ZR",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 1087.92
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 6044,
+					"iamt": 1087.92
+				}
+			}],
+			"val": 7132,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GTI-000240",
+			"chksum": "35665f10a372749c2642eeb199dfd24c4816cba878b2fd3efbe759671ab1ec28"
+		}]
+	}, {
+		"ctin": "36AKFPR1326M1ZX",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 65621.88
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 1312437.5,
+					"iamt": 65621.88
+				}
+			}],
+			"val": 1378059.38,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "773",
+			"chksum": "d02542048a71c4fd512ba9a71cdaea5d761bf0696466851a9c0bbb8f29ad1ba6"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 70809.38
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 1416187.5,
+					"iamt": 70809.38
+				}
+			}],
+			"val": 1486996.87,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "793",
+			"chksum": "8d469eaa49d1203a387fa3f2e1e5f7cbcd1787855c1199bbe5fc2a4d103e7781"
+		}]
+	}, {
+		"ctin": "07AABCT3518Q1ZY",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 1005.3,
+					"tx_s": 1005.3
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 1005.3,
+					"rt": 18,
+					"txval": 11170,
+					"camt": 1005.3
+				}
+			}],
+			"val": 13180,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "01569739480100",
+			"chksum": "6c8efded6b32db9cdeb8b1fb76827ab1e04e9993025ee78929e08a492a99e63c"
+		}]
+	}, {
+		"ctin": "07AADFB6887B1ZH",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 3330.9,
+					"tx_s": 3330.9
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 3330.9,
+					"rt": 18,
+					"txval": 37010,
+					"camt": 3330.9
+				}
+			}],
+			"val": 43672,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "06-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1571",
+			"chksum": "f5a2289b20fb57822a1e4c4bdc2b06ad246d5be14da5d19db2e8d326d5aa1068"
+		}]
+	}, {
+		"ctin": "07ABCFA2050K1ZR",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 16887.5,
+					"tx_s": 16887.5
+				},
+				"itm_det": {
+					"samt": 16887.5,
+					"rt": 5,
+					"txval": 675500,
+					"camt": 16887.5
+				}
+			}],
+			"val": 709275,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "432",
+			"chksum": "d446cfc9ead7c08ae4419da1d42843219cfd68b51dbf56a02c2abb3a5653c3ce"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 3618.75,
+					"tx_s": 3618.75
+				},
+				"itm_det": {
+					"samt": 3618.75,
+					"rt": 5,
+					"txval": 144750,
+					"camt": 3618.75
+				}
+			}],
+			"val": 151988,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "436",
+			"chksum": "945ec1f62c5f4aad501643005d05ffc2a5de3048c927aca3561f1bacfd34dbef"
+		}]
+	}, {
+		"ctin": "21ATEPA3433A1ZT",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 13439.5
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 268790,
+					"iamt": 13439.5
+				}
+			}],
+			"val": 282229.5,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "24-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "63",
+			"chksum": "bd20f43090be93d616de0d4e0d41704cce1a76f170638422d4f14f8f0b120362"
+		}]
+	}, {
+		"ctin": "24AAACJ4124B1ZC",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 0,
+					"txval": 4310,
+					"camt": 0,
+					"iamt": 0
+				}
+			}],
+			"val": 4310,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "14-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "108149161",
+			"chksum": "d754bfe56b291da4e025f97a9e5f535ec772233650ff5a4c2631a6e61d37157a"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 0,
+					"txval": 984,
+					"camt": 0,
+					"iamt": 0
+				}
+			}],
+			"val": 984,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "38623482",
+			"chksum": "4857d2220adabc80e212ac77c09b0939b3d79ddc52efbbbae0c20088587d23dc"
+		}]
+	}, {
+		"ctin": "24AAGFM2501C1Z2",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 9490
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 189800,
+					"iamt": 9490
+				}
+			}],
+			"val": 199290,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "13-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "46",
+			"chksum": "76325ad748762b336ef5358a6d183c4d42133d881423bf2d3ccc6813a9b5fa01"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 9677.5
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 193550,
+					"iamt": 9677.5
+				}
+			}],
+			"val": 203227.5,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "59",
+			"chksum": "00a4a2c6d5557cc7e133dbbefd6c246e50bf07fddf9bb65045eb5289437bbfec"
+		}]
+	}, {
+		"ctin": "07AAEPG8082C1ZX",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 26.97,
+					"tx_s": 26.97
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 26.97,
+					"rt": 5,
+					"txval": 1078.8,
+					"camt": 26.97
+				}
+			}],
+			"val": 1133,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1389",
+			"chksum": "6196ecb053b8efc3fadf02590d6475c05ec2122f0812242ea3931cc9990f4d8b"
+		}, {
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 35.96,
+					"tx_s": 35.96
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 35.96,
+					"rt": 5,
+					"txval": 1438.4,
+					"camt": 35.96
+				}
+			}],
+			"val": 1510,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1395",
+			"chksum": "0a9eb0c6833bec17fcd09e19486ee1070cfb2b78726c1eb8ff56a565d9350ae1"
+		}]
+	}, {
+		"ctin": "08AIRPJ7001M1ZW",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 35614.25
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 712285,
+					"iamt": 35614.25
+				}
+			}],
+			"val": 747899,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "11-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "55",
+			"chksum": "542394b15c78cd6c0948c4a0199182bb101ee3b6cbb2e98f4b464c5b0355a170"
+		}]
+	}, {
+		"ctin": "07AAPFS2647L1ZL",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 0,
+					"txval": 5230,
+					"camt": 0
+				}
+			}],
+			"val": 5230,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "810578",
+			"chksum": "cb910ea07b25c02fdbfed5ee0d12c1a69db7b9c15b989b96dd0691d735cb6e38"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 0,
+					"txval": 4900,
+					"camt": 0
+				}
+			}],
+			"val": 4900,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "810780",
+			"chksum": "4ad7c4fe4277ced832ea769af90d19481b1f96192023132b959645aa02bf719e"
+		}]
+	}, {
+		"ctin": "07AAAFG4028L1ZH",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 1537.92,
+					"tx_s": 1537.92
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 1537.92,
+					"rt": 18,
+					"txval": 17088,
+					"camt": 1537.92
+				}
+			}],
+			"val": 20163.84,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "553",
+			"chksum": "6d238d1b919cc49ec578494b7a8af41c460e4bf6e0182ef0045fb9c38c79dfef"
+		}]
+	}, {
+		"ctin": "07AJOPG5879L1ZE",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 281.47,
+					"tx_s": 281.47
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 281.47,
+					"rt": 5,
+					"txval": 11258.8,
+					"camt": 281.47
+				}
+			}],
+			"val": 11822,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "636",
+			"chksum": "662f949481d1d7e41c9989b646583f2d1b1dfacca57715db45744e795185b145"
+		}]
+	}, {
+		"ctin": "07ADQPA2423C1Z4",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 2566.13,
+					"tx_s": 2566.13
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 2566.13,
+					"rt": 5,
+					"txval": 102645.05,
+					"camt": 2566.13
+				}
+			}],
+			"val": 107777,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "SSE729",
+			"chksum": "c345915a3ba794359d43240c642650bbbad98a8b2d7998a5c293315cbba73626"
+		}]
+	}, {
+		"ctin": "27AAACZ0330P1Z5",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 5166
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 28700,
+					"iamt": 5166
+				}
+			}],
+			"val": 33866,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "BOM30R0011282",
+			"chksum": "22218e855ead218a52c0699ac57b4c418bf3fb2a31e4f4e266d75057ed5646f5"
+		}]
+	}, {
+		"ctin": "06AADCA3484C2Z0",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 10627.02
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 59039,
+					"iamt": 10627.02
+				}
+			}],
+			"val": 69666,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "03-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "INV-000110",
+			"chksum": "0d94dc20da2dc7e5d9def79a2de2e47cb3546d74ca56596f32720329159fa953"
+		}]
+	}, {
+		"ctin": "23ALSPG5067G1ZZ",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 8682.2
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 173644,
+					"iamt": 8682.2
+				}
+			}],
+			"val": 182326.2,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "97",
+			"chksum": "623510f4da3f3d19fa99f1cbd5e603f1412aea663039b5f0c93d5357658df90a"
+		}]
+	}, {
+		"ctin": "08AILPA6034B1ZR",
+		"cfs": "N",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 11950
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 239000,
+					"iamt": 11950
+				}
+			}],
+			"val": 250950,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "038",
+			"chksum": "a7de279f017c569670dbd257b0d2317fa431f218f92ad52016db10d9f9268126"
+		}]
+	}, {
+		"ctin": "07AAAFA4705E1Z2",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 25669.93,
+					"tx_s": 25669.93
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 25669.93,
+					"rt": 5,
+					"txval": 1026797.21,
+					"camt": 25669.93
+				}
+			}],
+			"val": 1078137,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "894",
+			"chksum": "dd6ddd4d01e0a76cee8fecfcac9eff4aeb0fe2d578a16a9f10aad9f9c146ebb8"
+		}, {
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 25737.32,
+					"tx_s": 25737.32
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 25737.32,
+					"rt": 5,
+					"txval": 1029492.67,
+					"camt": 25737.32
+				}
+			}],
+			"val": 1080967,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "895",
+			"chksum": "beff2102e25af95ea87551fa18b97474197e0abaccfdd71722bfe545bd11ab75"
+		}]
+	}, {
+		"ctin": "19AAEFC7582K1ZX",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 8478.7
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 169574,
+					"iamt": 8478.7
+				}
+			}],
+			"val": 178052.4,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "06-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "208",
+			"chksum": "7f903a772ff0a740a2d1f73e9830bfe26933cf8d95c83670cd923a33318ddb33"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 11108.75
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 222175,
+					"iamt": 11108.75
+				}
+			}],
+			"val": 233283.75,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "217",
+			"chksum": "e5fc23736d974a58ca4c84cf83c34f114edbb18b6475331bd923a29c8444ef53"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 8093.75
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 161875,
+					"iamt": 8093.75
+				}
+			}],
+			"val": 169968.75,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "23-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "224",
+			"chksum": "b90ff491520d6b8a59064dca8d37b0a13bd1520eb16a828cb5456c458b65e90c"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 13192.1
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 263842,
+					"iamt": 13192.1
+				}
+			}],
+			"val": 277034.1,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "227",
+			"chksum": "c2ea8d91381bc2c61ee994e1c5794a1a9a08ba1ed7481ad90991f9fa677a41e5"
+		}]
+	}, {
+		"ctin": "07AAAHS6466C1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 1252.44,
+					"tx_s": 1252.44
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 1252.44,
+					"rt": 18,
+					"txval": 13916,
+					"camt": 1252.44
+				}
+			}],
+			"val": 16421,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "250",
+			"chksum": "78dd5c1c88267045460d1549d5d94116132a4bccd467c30668a62f9467000b75"
+		}]
+	}, {
+		"ctin": "07AAKPM7521N1Z8",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 110.13,
+					"tx_s": 110.13
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 110.13,
+					"rt": 5,
+					"txval": 4405,
+					"camt": 110.13,
+					"iamt": 0
+				}
+			}],
+			"val": 4625.24,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "BS-1654",
+			"chksum": "fadb003a8a79905293f14a255457fe86afe87b515d70ae66f7c1d3348b2329fe"
+		}]
+	}, {
+		"ctin": "07AALFJ9088J1ZL",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 559.2,
+					"tx_s": 559.2
+				},
+				"itm_det": {
+					"samt": 559.2,
+					"rt": 5,
+					"txval": 22368,
+					"camt": 559.2
+				}
+			}],
+			"val": 23486.4,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2083",
+			"chksum": "59538b8f8cd5c96ddf7ac54e7de3a31f9910e1276ab6cfe8c468d2f9b70f6eed"
+		}]
+	}, {
+		"ctin": "07AAIFB8960A1ZK",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 54,
+					"tx_s": 54
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 54,
+					"rt": 18,
+					"txval": 600,
+					"camt": 54
+				}
+			}],
+			"val": 708,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "692",
+			"chksum": "cbe70179f6009a7c0e24c5a83ad4b8afac7d09ef9b91b5b5da97ebb3f4d6d10d"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 990,
+					"tx_s": 990
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 990,
+					"rt": 18,
+					"txval": 11000,
+					"camt": 990
+				}
+			}],
+			"val": 12980,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "720",
+			"chksum": "7c161e92f883a8bf97aaeaf31c01fd4bf89236953380759294f6082cbb873719"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 414,
+					"tx_s": 414
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 414,
+					"rt": 18,
+					"txval": 4600,
+					"camt": 414
+				}
+			}],
+			"val": 5428,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "29-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "795",
+			"chksum": "c12f79f398309064062431531e635ee88d67cca0e56d85393e5fb311b48ce67f"
+		}]
+	}, {
+		"ctin": "07AALFD4032G1ZO",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 15622.65,
+					"tx_s": 15622.65
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 15622.65,
+					"rt": 18,
+					"txval": 173585,
+					"camt": 15622.65
+				}
+			}],
+			"val": 204831,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST930/17-18",
+			"chksum": "fbc8e7c3b8aaca92eaf72b383b81ba214ed9ca91e7acbcd650f8ab37e2ecd6c8"
+		}]
+	}, {
+		"ctin": "07CENPR7769L1ZC",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 2313.23,
+					"tx_s": 2313.23
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 2313.23,
+					"rt": 18,
+					"txval": 25702.5,
+					"camt": 2313.23,
+					"iamt": 0
+				}
+			}],
+			"val": 30328.96,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-11-2017",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "201715",
+			"chksum": "72f13a4e057af490a1136348bfc9a52ce764eebf5f985611a9b6ef99de3549e2"
+		}]
+	}, {
+		"ctin": "07AAGFA1910P1ZG",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 783,
+					"tx_s": 783
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 783,
+					"rt": 18,
+					"txval": 8700,
+					"camt": 783
+				}
+			}],
+			"val": 10266,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "953",
+			"chksum": "5aa636dd21a85a5d8bd3d8ce01526cbd5ff2bea5dcb91daa4e452976e1bed90d"
+		}]
+	}, {
+		"ctin": "03ADDPS2102B1ZH",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 314483.75
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 6289675,
+					"iamt": 314483.75
+				}
+			}],
+			"val": 6604159,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "252",
+			"chksum": "433229ad1dd7cfb3fbb292aeba87c0fadba34a3710b6f65537db7ac455c34119"
+		}]
+	}, {
+		"ctin": "07AAQPZ3728E1Z7",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 83.7,
+					"tx_s": 83.7
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 83.7,
+					"rt": 5,
+					"txval": 3348,
+					"camt": 83.7
+				}
+			}],
+			"val": 3515,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST-162",
+			"chksum": "6f112bf3a9be822bee46ab4fb36d0cf58dd8d107d33d10f3b575be2a0b95dd4b"
+		}]
+	}, {
+		"ctin": "07ABIFA0404D1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1201,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 3943.8,
+					"tx_s": 3943.8
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 3943.8,
+					"rt": 12,
+					"txval": 65730,
+					"camt": 3943.8
+				}
+			}],
+			"val": 73617.6,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1080002601",
+			"chksum": "68e556f3495014ccf9ce8b9683cdaa61164940ad683fe33bdf63ba8105ed3ec6"
+		}]
+	}, {
+		"ctin": "27AAACG3630R1ZB",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 4473.36
+				},
+				"itm_det": {
+					"rt": 18,
+					"txval": 24852,
+					"iamt": 4473.36
+				}
+			}],
+			"val": 29325,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "LKHOIM180300003",
+			"chksum": "c34a4a13916a27db0d7a31620322b9fd3071f3c156038e21e24f5743483c1e27"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 6971
+				},
+				"itm_det": {
+					"rt": 18,
+					"txval": 38725.05,
+					"iamt": 6971
+				}
+			}],
+			"val": 45696,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "SLKHOIM180300007",
+			"chksum": "a7b4f32878c7b97a73075a4cadf2e59e2761c1ba9d1734b41ccbcc707db48a0d"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 19123.47
+				},
+				"itm_det": {
+					"rt": 18,
+					"txval": 106241.5,
+					"iamt": 19123.47
+				}
+			}],
+			"val": 125365,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "29-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "SLKHOIM180300012",
+			"chksum": "7f08e44684cda615bd217522b080cfa533ee803e920df1f4c935abcc78b6af30"
+		}]
+	}, {
+		"ctin": "07AAQFS3680J1ZL",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 17737.7,
+					"tx_s": 17737.7
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 17737.7,
+					"rt": 5,
+					"txval": 709508,
+					"camt": 17737.7
+				}
+			}],
+			"val": 744983,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "611",
+			"chksum": "fb6de068f248afd3bd47d877d09afbb21843d4c30d59ac356faca1b6cb680984"
+		}]
+	}, {
+		"ctin": "09AFWPJ7249D1ZX",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 19497.75
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 389955,
+					"iamt": 19497.75
+				}
+			}],
+			"val": 389955,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "01-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "4988-4992",
+			"chksum": "f38de6aac78498f2b8463412cca5d7f7980b9119541eabf8e62910a71a22b41f"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 4871
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 97420,
+					"iamt": 4871
+				}
+			}],
+			"val": 97420,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "5015",
+			"chksum": "a8bfef7535c9b05e16a84367e84576a9cd92e75d6b4e16002bfa192e40c98e3e"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 8057.5
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 161150,
+					"iamt": 8057.5
+				}
+			}],
+			"val": 161150,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "29-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "5019-5020",
+			"chksum": "bae7552fd71569dcfde718c2db0655d5dfb787ddf2893b10640320bc1679b02c"
+		}]
+	}, {
+		"ctin": "08AJPPM1429D1Z8",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 950
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 19000,
+					"iamt": 950
+				}
+			}],
+			"val": 19000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-01-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "1028",
+			"chksum": "304b197213b3f0e38d4342e50cae6cf4d11572ac81ab0f27e49b3d2723882455"
+		}]
+	}, {
+		"ctin": "07ADKFS6046H1ZS",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 107.05,
+					"tx_s": 107.05
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 107.05,
+					"rt": 5,
+					"txval": 4281.93,
+					"camt": 107.05
+				}
+			}],
+			"val": 4496,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "05-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "37",
+			"chksum": "0b57173408a3d2948561af331d26098d60501e9c2726c3d378759886a32fcc73"
+		}]
+	}, {
+		"ctin": "06AAACT7966R1ZF",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 3250,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 5,
+					"txval": 65000,
+					"camt": 0,
+					"iamt": 3250
+				}
+			}],
+			"val": 65000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "Y",
+			"cflag": "U",
+			"inum": "2806207702",
+			"chksum": "b3c79f8dab74d71faf620abf4c6a90358367687b3b231d4aed4c3a090f4e58cf"
+		}]
+	}, {
+		"ctin": "07AAWFS9704M1Z8",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 203.18,
+					"tx_s": 203.18
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 203.18,
+					"rt": 5,
+					"txval": 8127,
+					"camt": 203.18
+				}
+			}],
+			"val": 8551,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "SJF/TI/2038",
+			"chksum": "40b41bcd2411111c3f712f7200dd72ccba75930378f8e0cfb838608d0aa70011"
+		}]
+	}, {
+		"ctin": "07AFKPG4304G1ZS",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 2500,
+					"tx_s": 2500
+				},
+				"itm_det": {
+					"samt": 2500,
+					"rt": 5,
+					"txval": 100000,
+					"camt": 2500
+				}
+			}],
+			"val": 100000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "156",
+			"chksum": "8d1a5576c385add1a149dd3b0a22813b6518cc97929ee81bb1e87e0c00c9ea86"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 2550,
+					"tx_s": 2550
+				},
+				"itm_det": {
+					"samt": 2550,
+					"rt": 5,
+					"txval": 102000,
+					"camt": 2550
+				}
+			}],
+			"val": 102000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "22-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "163",
+			"chksum": "5db547ed9ac7367a3369d846905925628091250891c8680d453a3da00df651b0"
+		}]
+	}, {
+		"ctin": "07ADFPG5045F1ZV",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 264.15,
+					"tx_s": 264.15
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 264.15,
+					"rt": 18,
+					"txval": 2935,
+					"camt": 264.15
+				}
+			}],
+			"val": 3463,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "31-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "218",
+			"chksum": "312632cc208a12883fbe4ca89fdbe96a5e7ef171b291a30fe946a64b752394f4"
+		}]
+	}, {
+		"ctin": "07ACFFS3495L1ZJ",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 168.88,
+					"tx_s": 168.88
+				},
+				"itm_det": {
+					"samt": 168.88,
+					"rt": 5,
+					"txval": 6755.4,
+					"camt": 168.88
+				}
+			}],
+			"val": 7093.18,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "422",
+			"chksum": "fb382b38f768d23a80d0e6b0cd339b50ace945e3912c76bcd68091c5802fcab1"
+		}]
+	}, {
+		"ctin": "09ABWFS3434M1ZB",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 3417
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 68350,
+					"iamt": 3417
+				}
+			}],
+			"val": 71767,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "26-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "54",
+			"chksum": "168c212752430aecd8bfb9c1c4ade5f540548f175c739562198ecb9bddfe4998"
+		}, {
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 3305
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 66100,
+					"iamt": 3305
+				}
+			}],
+			"val": 69405,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "04-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "56",
+			"chksum": "5a006401c2f75d363fd79e94f022dc2ad6e8e0067ce3fee1216d58331f66fed6"
+		}]
+	}, {
+		"ctin": "27AAECT5607R1ZP",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 2520
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 14000,
+					"iamt": 2520
+				}
+			}],
+			"val": 16520,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "3717/17-18",
+			"chksum": "3618bb3e46ac28aba5a306efc3eaee68f8164a491acf01e4ecf532d3a157bf96"
+		}, {
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 3654.42
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 20302.36,
+					"iamt": 3654.42
+				}
+			}],
+			"val": 23956.78,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "3718/17-18",
+			"chksum": "6d6223ca0d13bd94b51115391b7e251765e658c4dc104cde49fc4af8e112b3d6"
+		}, {
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 8458.93
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 46994.08,
+					"iamt": 8458.93
+				}
+			}],
+			"val": 55453.01,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "3784/17-18",
+			"chksum": "0c0a70c49933e0c48cf5ecf797607ca6d7bd81f7c338c7de5139ee5d8eb91d3d"
+		}]
+	}, {
+		"ctin": "07AKSPB0047J1Z7",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 62500,
+					"tx_s": 62500
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 62500,
+					"rt": 5,
+					"txval": 2500000,
+					"camt": 62500
+				}
+			}],
+			"val": 2625000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "03-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "340",
+			"chksum": "425a14baa2edd27cf4df65b1a6dd2cb90be3e205877630bb4f3154ae02c81a06"
+		}, {
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 65312.5,
+					"tx_s": 65312.5
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 65312.5,
+					"rt": 5,
+					"txval": 2612500,
+					"camt": 65312.5
+				}
+			}],
+			"val": 2743125,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "387",
+			"chksum": "7be5b05342c399f972e06dc1c443b13f1356975ea6bb12d738d0dbf07467297d"
+		}]
+	}, {
+		"ctin": "07AAIFB4199D1ZF",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 2945.85,
+					"tx_s": 2945.85
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 2945.85,
+					"rt": 5,
+					"txval": 117834,
+					"camt": 2945.85
+				}
+			}],
+			"val": 123726,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "839",
+			"chksum": "8cae7ce29efbf99e7c2e6088837acd1855a5cf23c1062bd55778d0adce1300fc"
+		}]
+	}, {
+		"ctin": "09AASPW2023K1Z5",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 6846.75
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 136935,
+					"iamt": 6846.75
+				}
+			}],
+			"val": 143781,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "14-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "0001",
+			"chksum": "37241377346338ce276beac4f3c72b1dc96f1bc5f02edccaba6d2a56fa8724f0"
+		}]
+	}, {
+		"ctin": "09ANYPR2337Q1ZS",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 6054.3
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 121086,
+					"iamt": 6054.3
+				}
+			}],
+			"val": 127141,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "162",
+			"chksum": "f38b17a1a1e911aadcc66d5c0f5cb8698766458feb21a678c233a4b3a1544f96"
+		}]
+	}, {
+		"ctin": "08ACWPK9674N1ZA",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 30254.75
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 605095,
+					"iamt": 30254.75
+				}
+			}],
+			"val": 635350,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "04-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "A-38",
+			"chksum": "c9bbeadab58da7df626dc3a19d18bf697013c22dbec7f85cdce386f756df2b78"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 30254.75
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 605095,
+					"iamt": 30254.75
+				}
+			}],
+			"val": 635350,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "04-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "A-39",
+			"chksum": "420de6f766124c27c0c791ea8d20ecb8ee9e3c33802caa21e5624fe076ead8a8"
+		}]
+	}, {
+		"ctin": "27AABCO1164H1ZM",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 1614.24,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 18,
+					"txval": 8968,
+					"camt": 0,
+					"iamt": 1614.24
+				}
+			}],
+			"val": 10582.24,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "24-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "ICA1085217-18",
+			"chksum": "5390fecd11a8d9fb79f899b3084b3ab880785ea05aad008a4fc77b8b3a062dbf"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 306,
+					"tx_c": 0,
+					"tx_s": 0
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 0,
+					"rt": 18,
+					"txval": 1700,
+					"camt": 0,
+					"iamt": 306
+				}
+			}],
+			"val": 2006,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "24-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "ICA1086117-18",
+			"chksum": "9d761036deafb305f6694eefe9b5c88cf9e7b112fc1257a89fad38b5a405861c"
+		}]
+	}, {
+		"ctin": "33AQSPV4489J1ZU",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 19710
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 18,
+					"txval": 109500,
+					"iamt": 19710
+				}
+			}],
+			"val": 129210,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "60",
+			"chksum": "28a55a5a40210542bf4f518e8da4990bfbb77a532e7dfa2a6aed9f069bc3eeac"
+		}]
+	}, {
+		"ctin": "07AAAFB5496K1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 112.5,
+					"tx_s": 112.5
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 112.5,
+					"rt": 5,
+					"txval": 4500,
+					"camt": 112.5
+				}
+			}],
+			"val": 4725,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "30-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "817",
+			"chksum": "5dad7b2c65e4463cc66982d7bf462116dd655d3151ca3acc4947ff50607d6996"
+		}, {
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 13,
+					"tx_s": 13
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 13,
+					"rt": 5,
+					"txval": 520,
+					"camt": 13
+				}
+			}],
+			"val": 546,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-02-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "875",
+			"chksum": "d1d70b70de29f41b4a564dc61b81f01a35ddacc989750c5ebaf7726f912d76d0"
+		}, {
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 26,
+					"tx_s": 26
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 26,
+					"rt": 5,
+					"txval": 1040,
+					"camt": 26
+				}
+			}],
+			"val": 1092,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "954",
+			"chksum": "31d0268ce14ee497c88ce63edd5ba809cf616ccb1bb4f8dc013b103c47406479"
+		}, {
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 156,
+					"tx_s": 156
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 156,
+					"rt": 5,
+					"txval": 6240,
+					"camt": 156
+				}
+			}],
+			"val": 6552,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "21-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "958",
+			"chksum": "5e57ea35c5596bae6f3d0c68f03b84d296638f6c5535e42a1878ef005bfb8186"
+		}]
+	}, {
+		"ctin": "07AAJPK9704E2ZO",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 93.12,
+					"tx_s": 93.12
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 93.12,
+					"rt": 5,
+					"txval": 3724.8,
+					"camt": 93.12
+				}
+			}],
+			"val": 3911,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "TI-2021",
+			"chksum": "a65990dcd4f4e3d3525005272c7839c3544f0bac145963f0258e17154da5da6e"
+		}]
+	}, {
+		"ctin": "07AADCC8614Q1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 107.93,
+					"tx_s": 107.93
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 107.93,
+					"rt": 5,
+					"txval": 4317.29,
+					"camt": 107.93
+				}
+			}],
+			"val": 4533,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST/TI-1510",
+			"chksum": "2e9cd854d8a0724185aeae6194dd2bb99eafc7e580b76de9ff7dc825103c2eda"
+		}]
+	}, {
+		"ctin": "07AAAFA8929Q1ZV",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 892.5,
+					"tx_s": 892.5
+				},
+				"itm_det": {
+					"samt": 892.5,
+					"rt": 5,
+					"txval": 35700,
+					"camt": 892.5
+				}
+			}],
+			"val": 37485,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "68",
+			"chksum": "ee676f492e91fa23218cd3dc996318260298f6511db04174a2a4db5583e2a823"
+		}]
+	}, {
+		"ctin": "05ADKPS0577M1Z0",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 30293
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 605850,
+					"iamt": 30293
+				}
+			}],
+			"val": 636143,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "18-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "65",
+			"chksum": "199f19110d05434f5005083af8c9e67789486dd1ea03163f0628aacdd1df033b"
+		}]
+	}, {
+		"ctin": "18AAECA0676M1ZE",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 500,
+				"itc": {
+					"elg": "ip",
+					"tx_i": 29038.4
+				},
+				"itm_det": {
+					"rt": 5,
+					"txval": 580768.02,
+					"iamt": 29038.4
+				}
+			}],
+			"val": 609806.42,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "ACPL/17-18/038",
+			"chksum": "311c7d87cb0b009baaaee71e708e3470901ee6d3095b6883443f72dbac051c21"
+		}]
+	}, {
+		"ctin": "07AAKPG2948R1Z1",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 57.53,
+					"tx_s": 57.53
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 57.53,
+					"rt": 5,
+					"txval": 2301,
+					"camt": 57.53
+				}
+			}],
+			"val": 2417,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "14-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1388",
+			"chksum": "f55731d5d6934922312275ad3ffe71c71377c6dc4962b83acc5c6b030ae09593"
+		}]
+	}, {
+		"ctin": "07AUOPS6650G1Z4",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 123.54,
+					"tx_s": 123.54
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 123.54,
+					"rt": 5,
+					"txval": 4941.4,
+					"camt": 123.54
+				}
+			}],
+			"val": 5188.48,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "03-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "GST-119",
+			"chksum": "5a25b032f2f9674275173f53a970445c90fd498e628374cba23c1a0a60a66a78"
+		}]
+	}, {
+		"ctin": "07AAAPS5530P1ZB",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 3850.03,
+					"tx_s": 3850.03
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 3850.03,
+					"rt": 5,
+					"txval": 154001.1,
+					"camt": 3850.03
+				}
+			}],
+			"val": 161701,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "27-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1301",
+			"chksum": "e08a5931b7b4791cf4271377647e633b4fe0e1fc52c89dc52b7e56268a452891"
+		}]
+	}, {
+		"ctin": "24AHPPA2398K1Z2",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 126550
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 2531000,
+					"iamt": 126550
+				}
+			}],
+			"val": 2657550,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "03-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "298",
+			"chksum": "5e6978e2c3a6b5b4697bdb48a27ff2f377ca193fbdcc1323c409ea9830481e2f"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 77000
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 1540000,
+					"iamt": 77000
+				}
+			}],
+			"val": 1617000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "14-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "332",
+			"chksum": "f799487a01899978722b2df95d6fe66fbfc4aeb319e7452142c95447200026b2"
+		}]
+	}, {
+		"ctin": "27AAFPS6707H1ZG",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 501,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 19888.5
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 397770,
+					"iamt": 19888.5
+				}
+			}],
+			"val": 417658,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "15-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "A464",
+			"chksum": "9376bcc17683f770225fd7ebacf41122fafe2d59215dd63b0ec8ff4baf90d14b"
+		}]
+	}, {
+		"ctin": "07BCVPG6854Q1ZI",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 15643,
+					"tx_s": 15643
+				},
+				"itm_det": {
+					"samt": 15643,
+					"rt": 5,
+					"txval": 625720,
+					"camt": 15643
+				}
+			}],
+			"val": 657006,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "06-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "1997",
+			"chksum": "3a8953caebed1baec383cfe75fcd46d38f8edc6eb8293ec5dff9887128da3713"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 34497.88,
+					"tx_s": 34497.88
+				},
+				"itm_det": {
+					"samt": 34497.88,
+					"rt": 5,
+					"txval": 1379915,
+					"camt": 34497.88
+				}
+			}],
+			"val": 1448911,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2013",
+			"chksum": "7f9866133e0eb5f7f559c80997a7a8900c7f4616b8f847324a428d1ad7118b8e"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 31386.6,
+					"tx_s": 31386.6
+				},
+				"itm_det": {
+					"samt": 31386.6,
+					"rt": 5,
+					"txval": 1255464,
+					"camt": 31386.6
+				}
+			}],
+			"val": 1318237,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2027",
+			"chksum": "72f97971fba9aa06b842f2d8a67f2fae99ca3c751deeb9a4a60276e83e6e433d"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 39197.36,
+					"tx_s": 39197.36
+				},
+				"itm_det": {
+					"samt": 39197.36,
+					"rt": 5,
+					"txval": 1567894.2,
+					"camt": 39197.36
+				}
+			}],
+			"val": 1646289,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2040",
+			"chksum": "f67aea22aae2f1edf1ad4aca984ddb407ab126738de6ebc972c1622b9c625b42"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 9340.88,
+					"tx_s": 9340.88
+				},
+				"itm_det": {
+					"samt": 9340.88,
+					"rt": 5,
+					"txval": 373635,
+					"camt": 9340.88
+				}
+			}],
+			"val": 392317,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2050",
+			"chksum": "44f95639f6691b591d02f44e4195c9910be89eb261c5f516a65a6c1b19df1e30"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 47500,
+					"tx_s": 47500
+				},
+				"itm_det": {
+					"samt": 47500,
+					"rt": 5,
+					"txval": 1900000,
+					"camt": 47500
+				}
+			}],
+			"val": 1995000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2054",
+			"chksum": "e8688a0897495754f6458f2f92109260929d130c116b87db1d4f12a20681e04c"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 31997.25,
+					"tx_s": 31997.25
+				},
+				"itm_det": {
+					"samt": 31997.25,
+					"rt": 5,
+					"txval": 1279890,
+					"camt": 31997.25
+				}
+			}],
+			"val": 1343885,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2107",
+			"chksum": "c46a3f09455d2a50d3032fff90a7997603ce6eb8071193260f21b2cfae76ff1c"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 25377.75,
+					"tx_s": 25377.75
+				},
+				"itm_det": {
+					"samt": 25377.75,
+					"rt": 5,
+					"txval": 1015110,
+					"camt": 25377.75
+				}
+			}],
+			"val": 1065866,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2117",
+			"chksum": "1857cb2755dd0197c7a124ac67fb1344c9ea2f5a2f65d48b8a57df9ddbd2c987"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 63750,
+					"tx_s": 63750
+				},
+				"itm_det": {
+					"samt": 63750,
+					"rt": 12,
+					"txval": 1062500,
+					"camt": 63750
+				}
+			}],
+			"val": 1190000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2154",
+			"chksum": "460c4b2b8632ecef6979b4a0db50fad14792d6afea365ada324a606c0e765f1f"
+		}]
+	}, {
+		"ctin": "07AAGFA6058A1ZU",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 2801,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_c": 2625,
+					"tx_s": 2625
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 2625,
+					"rt": 28,
+					"txval": 18750,
+					"camt": 2625
+				}
+			}],
+			"val": 24000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "28-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "3837",
+			"chksum": "f497befa11a97cfa9e2d72389ee141cf1383f06af6e8ba1bf0974a51271f2005"
+		}]
+	}, {
+		"ctin": "07AAKFG5367N1ZR",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 160,
+					"tx_s": 160
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 160,
+					"rt": 5,
+					"txval": 6400,
+					"camt": 160,
+					"iamt": 0
+				}
+			}],
+			"val": 6720,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-01-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "062",
+			"chksum": "9f68d49fda4225e55d7970eb840b088da0c26e63f21f5869f4689b140cc32d4d"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 0,
+					"tx_c": 576,
+					"tx_s": 576
+				},
+				"itm_det": {
+					"csamt": 0,
+					"samt": 576,
+					"rt": 12,
+					"txval": 9600,
+					"camt": 576,
+					"iamt": 0
+				}
+			}],
+			"val": 10752,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "16-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "176",
+			"chksum": "62cac773c67056208c13ebda09c8935e6177739daca9a25b1eed434f7f167f51"
+		}]
+	}, {
+		"ctin": "07AIWPG3812G1Z6",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 26863.76,
+					"tx_s": 26863.76
+				},
+				"itm_det": {
+					"samt": 26863.76,
+					"rt": 5,
+					"txval": 1074550.4,
+					"camt": 26863.76
+				}
+			}],
+			"val": 1128278,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "07-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2004",
+			"chksum": "5676c9727bd248c49b1d56934b6b767c1842f073fe4e3fc179bb3dbcc09fdf1b"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 24046.14,
+					"tx_s": 24046.14
+				},
+				"itm_det": {
+					"samt": 24046.14,
+					"rt": 5,
+					"txval": 961845.5,
+					"camt": 24046.14
+				}
+			}],
+			"val": 1009938,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "08-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2014",
+			"chksum": "fdea329d07a437344b1a0e62b04a425c54560af95223b51e66b2b98168020b18"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 65340,
+					"tx_s": 65340
+				},
+				"itm_det": {
+					"samt": 65340,
+					"rt": 12,
+					"txval": 1089000,
+					"camt": 65340
+				}
+			}],
+			"val": 1219680,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2022",
+			"chksum": "14d24a20099f8af796d289d323201ed5c582e2b7112e6d3e69499d1059c309a4"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 29376.38,
+					"tx_s": 29376.38
+				},
+				"itm_det": {
+					"samt": 29376.38,
+					"rt": 5,
+					"txval": 1175055,
+					"camt": 29376.38
+				}
+			}],
+			"val": 1233808,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "09-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2025",
+			"chksum": "198c17254f0b8ba7a59c87934ce83128a46a0fd8df26445fee806edadfe83c08"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 25238.63,
+					"tx_s": 25238.63
+				},
+				"itm_det": {
+					"samt": 25238.63,
+					"rt": 5,
+					"txval": 1009545,
+					"camt": 25238.63
+				}
+			}],
+			"val": 1060022,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "10-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2036",
+			"chksum": "a3090c743216c7f0acb4341ddedef251e03119dfb90700036d839b7df7f5b976"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 24944.73,
+					"tx_s": 24944.73
+				},
+				"itm_det": {
+					"samt": 24944.73,
+					"rt": 5,
+					"txval": 997789.2,
+					"camt": 24944.73
+				}
+			}],
+			"val": 1047679,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "12-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2051",
+			"chksum": "61d1bc3ee31c0b527591260c1da919c1bdca5ec4ccb2a743ad7c8b0b28892f5a"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 9581.25,
+					"tx_s": 9581.25
+				},
+				"itm_det": {
+					"samt": 9581.25,
+					"rt": 5,
+					"txval": 383250,
+					"camt": 9581.25
+				}
+			}],
+			"val": 402413,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "17-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2112",
+			"chksum": "430f144dfe8d3612bbfeae2213ae66202c02dc4789b0a4340e5c9687f003326e"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 8461.25,
+					"tx_s": 8461.25
+				},
+				"itm_det": {
+					"samt": 8461.25,
+					"rt": 5,
+					"txval": 338450,
+					"camt": 8461.25
+				}
+			}],
+			"val": 355373,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "19-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2125",
+			"chksum": "eee8f638464f2b9682765410c34d4c739dbd3c4caab7874661ca2543c565a230"
+		}, {
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"elg": "ip",
+					"tx_c": 63750,
+					"tx_s": 63750
+				},
+				"itm_det": {
+					"samt": 63750,
+					"rt": 12,
+					"txval": 1062500,
+					"camt": 63750
+				}
+			}],
+			"val": 1190000,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "20-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "2136",
+			"chksum": "e80b137c8f4c2ceeb9b4fc9c8e5e36f34ffda1f1ef7a5021c518f0294c4e48e3"
+		}]
+	}, {
+		"ctin": "08AHOPR8406J1ZP",
+		"cfs": "Y",
+		"cname": null,
+		"inv": [{
+			"itms": [{
+				"num": 1,
+				"itc": {
+					"tx_cs": 0,
+					"elg": "ip",
+					"tx_i": 37600
+				},
+				"itm_det": {
+					"csamt": 0,
+					"rt": 5,
+					"txval": 752000,
+					"iamt": 37600
+				}
+			}],
+			"val": 789600,
+			"inv_typ": "R",
+			"flag": "N",
+			"updby": "S",
+			"pos": "07",
+			"idt": "13-03-2018",
+			"rchrg": "N",
+			"cflag": "U",
+			"inum": "035",
+			"chksum": "754a4b020d8148eedcbea97f233884d4a071810256aa57f098310c363b72cbaa"
+		}]
+	}]
+}
