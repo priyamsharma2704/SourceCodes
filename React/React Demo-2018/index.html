@@ -12,6 +12,14 @@
                     name:"ChunLi",
                     age:20
                 }
+                funcClick(e)
+                {
+                    console.log(state);
+                }
+                funcHover(e)
+                {
+                    console.log(e.targer,e.pageX);
+                }
                 render(){
                     return (
                         <div className="app-content">
@@ -19,6 +27,8 @@
                             <p>name:{this.state.name}</p>
                             <p>age:{this.state.age}</p>
                             {console.log("asdasd")}
+                            <button onClick={this.funcClick}>Click Me!</button>
+                            <button onMouseOver={this.funcHover}>Hover</button>
                         </div>
                     )
                 }
