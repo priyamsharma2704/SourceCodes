@@ -28,7 +28,7 @@ function renderCafe(doc)
 }
 
 //getting datas
-db.collection('cafes').get().then((snapshot)=>{
+db.collection('cafes').orderBy('Name').get().then((snapshot)=>{
   snapshot.docs.forEach(doc=>{
     console.log(doc.data());
     renderCafe(doc);
