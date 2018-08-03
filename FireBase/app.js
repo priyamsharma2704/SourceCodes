@@ -28,12 +28,27 @@ function renderCafe(doc)
 }
 
 //getting datas
-db.collection('cafes').orderBy('Name').get().then((snapshot)=>{
-  snapshot.docs.forEach(doc=>{
-    console.log(doc.data());
-    renderCafe(doc);
+// db.collection('cafes').orderBy('Name').get().then((snapshot)=>{
+//   snapshot.docs.forEach(doc=>{
+//     console.log(doc.data());
+//     renderCafe(doc);
+//   })
+//   //console.log(snapshot.docs);
+// })
+
+//realtime listner
+db.collection('cafes').orderBy('City').onSnapshot(snapshot =>{
+  let changes = snapshot.docChanges();
+  changes.forEach(change => {
+    if(change.type == 'added'){
+      renderCafe(change.doc);
+    }
+    else if(change.type == 'removed')
+    {
+      let li = cafeList.querySelector('[data-id=' + change.doc.id +']');
+      cafeList.removeChild(li);
+    }
   })
-  //console.log(snapshot.docs);
 })
 
 //saving data
