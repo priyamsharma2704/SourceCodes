@@ -12,11 +12,14 @@
                     name:"ChunLi",
                     age:20
                 }
-                funcClick(e)
+                funcClick=(e)=>
                 {
-                    console.log(state);
+                    console.log(this.state);
+                    this.setState({
+                        name:"Ken"
+                    });
                 }
-                funcHover(e)
+                funcHover=(e)=>
                 {
                     console.log(e.targer,e.pageX);
                 }
