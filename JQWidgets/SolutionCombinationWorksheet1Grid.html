@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="Description">Solution Combination</title>
+    <meta name="description" content="This is an example of JQWidget Grid. Grid is bound to Array data.">
+    <link rel="stylesheet" type="text/css" href="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/styles/jqx.base.css" />
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/scripts/jquery-1.11.1.min.js"></script>
+    <script src="../ACT2.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.columnsresize.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.columnsreorder.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxnumberinput.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxinput.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.export.js"></script>
+    <script type="text/javascript" src="../../ThirdParty/jqwidgets-ver4.1.1/jqwidgets/jqxdata.export.js"></script>
+    <script type="text/javascript" src="SolutionCombinationService.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var available_environments = [];
+            var last_clicked_cell_column_index = -1;
+            
+            $('#btn_Import').jqxButton({ imgSrc: '../../images/import.png', imgPosition: "left", textPosition: "right", width: '78px' });
+            $('#btn_Import').on('click', function () {
+                console.log("import");
+                ImportCSV();
+            });
+
+            $('#btn_Export').jqxButton({ imgSrc: '../../images/import.png', imgPosition: "left", textPosition: "right", width: '78px' });
+            $('#btn_Export').on('click', function () {
+                console.log("export");
+                var csv = $("#baseCasesGrid").jqxGrid('exportdata', 'csv');
+                console.log(csv);
+                ExportCSV(csv);
+            });
+
+            $("#btn_AddRow").on('click', function () {
+                //AddRow(function(newRowCount) {
+                //    Refresh(function (environments, base_cases, load_combinations) {
+                //       RefreshUI(environments, base_cases, load_combinations);
+                //    });
+                //});
+            });
+
+            //$('#btn_AddColumn').click(function (event) {
+            //    AddColumn(function(newColumnCount) {
+            //        Refresh(function (environments, base_cases, load_combinations) {
+            //           RefreshUI(environments, base_cases, load_combinations);
+            //        });
+            //    });
+            //});
+
+            $("#btn_DeleteRow").on('click', function () {
+                var selectedrowindex = $("#combinationGrid").jqxGrid('getselectedrowindex');
+                //DeleteRow(selectedrowindex);
+                //Refresh(function (environments, base_cases, load_combinations) {
+                //   RefreshUI(environments, base_cases, load_combinations);
+                //});
+            });
+
+            //$("#btn_DeleteColumn").on('click', function () {
+            //    if(last_clicked_cell_column_index != -1)
+            //        DeleteColumn(last_clicked_cell_column_index);
+                
+            //    Refresh(function (environments, base_cases, load_combinations) {
+            //       RefreshUI(environments, base_cases, load_combinations);
+            //    });
+            //});
+
+            //$('#combinationGrid').jqxGrid({ rowsheight: 20});
+            $('#baseCasesGrid').jqxGrid({ rowsheight: 20});
+
+            //$('#combinationGrid').jqxGrid({ height: 10});
+            $('#baseCasesGrid').jqxGrid({ height: 325 });
+
+            //--------------------------------------------Setting Base Case Grid Info---------------------------------------------------------//
+            $('#baseCasesGrid').on('cellvaluechanged', function (event) {
+                var baseCaseIndex = parseInt(args.datafield) - 3;
+                //console.log(event);
+                //console.log(event.target.id);
+                //console.log("Col #: " + args.datafield);
+                //console.log("Base Case Index #: " + baseCaseIndex);
+                //console.log("Row #: " + args.rowindex);
+                //console.log("New Val : " + args.newvalue);
+
+                if(args.rowindex == 0)
+                {
+                    //SetLoadCaseName(baseCaseIndex, args.newvalue);
+                    console.log("Name : " + args.newvalue);
+                }
+                else if(args.rowindex == 1)
+                {
+                    console.log("Env Type : " + args.newvalue);
+                }
+                else if (args.rowindex == 2) {
+                    //SetTime(baseCaseIndex, args.newvalue);
+                    console.log("Time/Freq: " + args.newvalue);
+                }
+                else if (args.rowindex == 3) {
+                    //SetPhaseAngle(baseCaseIndex, args.newvalue);
+                    console.log("Phase Angle : " + args.newvalue);
+                }
+                else if(args.datafield == 2)
+                {
+                    console.log("Combo Name" + args.newvalue);
+                }
+                else if(args.datafield == 3)
+                {
+                    console.log("Type : " + args.newvalue);
+                }
+                else {
+                    console.log("coefficient : " + args.newvalue);
+                }
+            });
+
+            //--------------------------------------------Setting Combination Grid Info---------------------------------------------------------//
+            //$('#combinationGrid').on('cellvaluechanged', function (event) {
+            //    //console.log(event);
+            //    console.log(event.target.id);
+            //    console.log("Col #: " + args.datafield);
+            //    console.log("Row #: " + args.rowindex);
+            //    console.log("New Val : " + args.newvalue);
+
+            //    if(args.datafield == "col2"){
+            //        SetLoadComboName(args.rowindex, args.newvalue);
+            //    }
+            //    else if (args.datafield == "col3") {
+            //        //ComboType. Change to integer
+
+            //        var comboType = 0
+            //        if (args.newvalue == "Linear") comboType = 0;
+            //        else if (args.newvalue == "Quadratic") comboType = 1;
+
+            //        SetComboType(args.rowindex, comboType);
+            //    }
+            //    //If not col2 or col3, then it has to be a coefficient
+            //    else {
+            //        SetCoefficient(args.rowindex, args.datafield - 4, args.newvalue);
+            //    }
+            //});
+
+             $('#baseCasesGrid').on('cellclick', function (event) {
+                 last_clicked_cell_column_index = parseInt(args.datafield) - 3;
+                 console.log("last clicked col : " + last_clicked_cell_column_index);
+             });
+
+             RefreshUI(2,3,4);
+
+            //on column header click
+             $('#baseCasesGrid').on('columnclick', function () {
+                 //console.log( event);
+                 //curCol = args.datafield;
+
+                 //get the img element by id
+                 //var img = document.getElementById("img_close");
+                 ////console.log(img);
+                 //var func = img["onclick"];
+
+                 //if (typeof (func) == "function") {
+                 //    func.call(img, event);      //call the onclick function on img and pass "event" as parameter
+                 //}
+                 
+             });
+        });
+//-----------------------------------------------------------------------------------------------------------------------------------------//
+        var data = new Array();
+        var combinationTypes = ["Linear", "Quadratic"];
+        var envType = ['Static Structural', 'Harmonic'];
+        var firstCol = ["", "", "", "", "", "",1];
+        var secondCol = ["", "", "", "", "", "Combination Name", "Combination 1"];
+        var thirdCol = ["Name", "Environment", "Time/Frequency", "Phase Angle", "", "Type", combinationTypes[0]];
+        var fourthCol = ["", "", "", "", "", ""];
+        var combinationNameCounter ;
+        var name2 = "";
+        var columnsBaseCaseGrid = new Array();
+        var curCol = 0;
+        var intialRows = 10;     //by default initial rows should be 7
+        var initialCols = 10;    //by default initial cols should be 4
+
+
+        function addRow(event)
+        {
+            var datainformations = $('#baseCasesGrid').jqxGrid('getdatainformation');
+            var rowscounts = datainformations.rowscount;
+            //console.log("total rows: " + rowscounts);
+
+            var newRow = args.rowindex + 1;
+            var datarow = generateNewRow(combinationNameCounter);
+            var commit = $("#baseCasesGrid").jqxGrid('addrow', null, datarow, newRow);
+            combinationNameCounter = combinationNameCounter + 1;
+        }
+
+        function deleteRow(event) {
+            console.log("delete");
+            var selectedrowindex = args.rowindex;
+
+            //if there is only 1 combination row, then dont delete it. You can add another row below it and then delete the previous row.
+            var datainformation = $('#baseCasesGrid').jqxGrid('getdatainformation');
+            var rowscount = datainformation.rowscount;
+            if (rowscount == 7)
+                return;
+            //var rowscount = $("#baseCasesGrid").jqxGrid('getdatainformation').rowscount;
+            if (selectedrowindex >= 0 && selectedrowindex < rowscount)
+            {
+                var id = $("#baseCasesGrid").jqxGrid('getrowid', selectedrowindex);
+                var commit = $("#baseCasesGrid").jqxGrid('deleterow', id);
+            }
+        }
+
+        var generateNewRow = function (i) {
+            var row = {};
+            row['1'] = i;
+            row['2'] = "Combination " + i;
+            row['3'] = combinationTypes[0];
+            return row;
+        }
+        
+        function addCol(event)
+        {
+            $("#baseCasesGrid").jqxGrid('endcelledit', args.rowindex, args.datafield, false);
+            var count = $("#baseCasesGrid").jqxGrid('columns').records.length;
+            //console.log(args.datafield);
+            count = count + 1;
+            name2 = name2 + count;
+            columnsBaseCaseGrid.push({ text: 'Base Case', datafield: name2, width: '10%', columntype: 'custom', createeditor: createGridEditorForFourthCol, initeditor: initGridEditorForFourthCol, geteditorvalue: gridEditorValueForFourthCol, cellbeginedit: cellbegineditForFourthCol, renderer: headerRendererForFourthCol, cellclassname: cellclassForFourthCol });
+            $("#baseCasesGrid").jqxGrid({ columns: columnsBaseCaseGrid });
+            $("#baseCasesGrid").jqxGrid("render");
+            name2 = "";
+        }
+
+        function deleteCol(event)
+        {
+            console.log("cur col : " + args.datafield);
+        }
+
+        //------------------------------------------------1st Col------------------------------------------------------//
+
+        var cellsrenderer1stCol = function (row, column, value) {
+            if (row >= 6) {
+                return '<img src="../../images/Add_16x16.png" onclick="addRow(event)"> <img src="../../images/Error_32x32.png" width="16" height="16" onclick="deleteRow(event)">';
+            }
+        }
+
+        var cellclassForFirstCol = function (row, datafield, value, rowdata) {
+            if (row > 5)
+                return "cellClassForFirstCol";
+        }
+
+        //------------------------------------------------2nd Col------------------------------------------------------//
+        var createGridEditorForSecondCol = function (row, cellValue, editor, cellText, width, height) {
+            var index = $('#baseCasesGrid').jqxGrid('getcolumnindex', 4);
+            // construct the editor.
+            if (row >= 6) {
+                var newRow = row - 5
+                var id = "propertyInput2ndCol" + newRow + "thRow";
+                //console.log(id);
+                var element2ndCol5thRow = $('<input type="text" id="propertygridinput"/>');
+                editor.append(element2ndCol5thRow);
+                editor.jqxInput({ height: height, width: width });
+                $('#propertygridinput').val(cellValue);
+            }
+        }
+        
+        var gridEditorValueForSecondCol = function (row, cellValue, editor) {
+            if (row >= 6) {
+                return editor.find('input').val();
+            }
+            return editor.val();
+        }
+
+        var cellbegineditForSecondCol = function (row, datafield, columntype, value) {
+            if (row == 5)
+                return false;
+        }
+
+        var cellclassForSecondCol = function (row, datafield, value, rowdata) {
+            if (row > 5)
+                return "cellClassForSecondCol";
+        }
+
+        //------------------------------------------------3rd Col------------------------------------------------------//
+        var createGridEditorForThirdCol = function (row, cellValue, editor, cellText, width, height) {
+            var index = $('#baseCasesGrid').jqxGrid('getcolumnindex', 4);
+            // construct the editor.
+           if (row >= 6) {
+                editor.jqxDropDownList({ autoDropDownHeight: true, width: width, source: combinationTypes });
+            }
+
+            var count = $("#baseCasesGrid").jqxGrid('columns').records.length;
+            //console.log(count);
+        }
+
+        var initGridEditorForThirdCol = function (row, cellValue, editor, cellText, width, height) {
+            // set the editor's current value. The callback is called each time the editor is displayed.
+            if (row == 1) {
+                editor.jqxDropDownList('selectItem', cellValue);
+            }
+            if (row >= 6) {
+                //console.log(editor);
+                editor.jqxDropDownList('selectItem', cellValue);
+            }
+        }
+
+        var gridEditorValueForThirdCol = function (row, cellValue, editor) {
+            //console.log(editor.val());
+            if (row == 0) {
+                //console.log(editor.find('input').val());
+                return editor.find('input').val();
+            }
+            return editor.val();
+        }
+
+        var cellbegineditForThirdCol = function (row, datafield, columntype, value) {
+            if (row == 0 || row == 1 || row == 2 || row == 3 || row == 5)
+                return false;
+        }
+
+        var cellclassForThirdCol = function (row, datafield, value, rowdata) {
+            if (row > 5)
+                return "cellClassForThirdCol";
+        }
+
+        //------------------------------------------------4th Col------------------------------------------------------//
+        var createGridEditorForFourthCol = function (row, cellValue, editor, cellText, width, height) {
+            //console.log("4th Column-" + row);
+            var index = $('#baseCasesGrid').jqxGrid('getcolumnindex', 4);
+            // construct the editor.
+            if (row == 0) {
+                var inputElement = $("<input/>").prependTo(editor);
+                inputElement.jqxInput({ placeHolder: "Enter Name", width: width, height: height });
+            }
+            else if (row == 1) {
+                editor.jqxDropDownList({ autoDropDownHeight: true, width: width, source: ['Static Structural', 'Harmonic'] });
+            }
+            else if (row == 2) {
+                editor.jqxNumberInput({ decimalDigits: 2, inputMode: 'simple', width: width, height: height, spinButtons: true });
+            }
+            else if(row == 3)
+            {
+                editor.jqxNumberInput({ inputMode: 'simple', width: width, height: height, spinButtons: true });
+            }
+            else if (row >= 6) {
+                editor.jqxNumberInput({ decimalDigits: 2, inputMode: 'simple', width: width, height: height, spinButtons: true });
+            }
+
+            var count = $("#baseCasesGrid").jqxGrid('columns').records.length;
+        }
+
+        var initGridEditorForFourthCol = function (row, cellValue, editor, cellText, width, height) {
+            // set the editor's current value. The callback is called each time the editor is displayed.
+            console.log(cellValue);
+            if( row == 0)
+            {
+                if (cellValue == undefined)
+                    cellValue = "";
+                var inputElement = editor.find('input');
+                inputElement.jqxInput('val', cellValue);
+            }
+            else if (row == 1) {
+                editor.jqxDropDownList('selectItem', cellValue);
+            }
+            else if(row == 2 || row == 3 || row >= 6)
+            {
+                editor.jqxNumberInput('val', cellValue);
+            }
+        }
+
+        var gridEditorValueForFourthCol = function (row, cellValue, editor) {
+            //console.log(editor.val());
+            if (row == 0) {
+                //console.log(editor.find('input').val());
+                return editor.find('input').val();
+            }
+            return editor.val();
+        }
+
+        var cellbegineditForFourthCol = function (row, datafield, columntype, value) {
+            //if (row == 4) return false;
+            console.log(datafield);
+            var value = $('#baseCasesGrid').jqxGrid('getcellvalue', 1, datafield);
+            if (value == envType[0] && row == 3)
+                return false;
+
+            if (row == 4 || row == 5)
+                return false;
+        }
+
+        function headerRendererForFourthCol() {
+            return ' <span>&nbsp;Base Case&nbsp;<img src="../../images/Add_16x16.png" onclick="addCol(event)"/>&nbsp;<img src="../../images/Error_32x32.png" id="img_close" width="16" height="16" onclick="deleteCol(event)"/></span>';
+        }
+
+        var cellclassForFourthCol = function (row, datafield, value, rowdata) {
+            if (row == 4 || row == 5)
+                return "editedCell";
+            var value = $('#baseCasesGrid').jqxGrid('getcellvalue', 1, datafield);
+            if (value == envType[0] && row == 3)
+                return "editedCell";
+        }
+
+        //-------------------------------------------------------------------------------------------------------------//
+
+        function RefreshUI(environments, base_cases, load_combinations) {
+            available_environments = environments;
+
+            var numBaseCases = base_cases.length;
+            var numLoadCombos = load_combinations.length;
+
+            if(numLoadCombos == 0)
+            {
+                AddRow(function(newRowCount) {
+                    Refresh(function (environments, base_cases, load_combinations) {
+                       RefreshUI(environments, base_cases, load_combinations);
+                    });
+                });
+            }
+
+            if(numBaseCases == 0)
+            {
+                AddColumn(function(newColumnCount) {
+                    Refresh(function (environments, base_cases, load_combinations) {
+                       RefreshUI(environments, base_cases, load_combinations);
+                    });
+                });
+            }
+
+            //var data = new Array();
+            //var x = ["Name", "Environment", "Time"];
+
+            //var col1width = '3%'
+            //var col2width = '8%'
+            //var col3width = '6%'
+            //var colNwidth = '10%'
+
+            //for (var i = 0; i < 3; i++) {
+            //    var row = {};
+
+            //    row["col1"] = "";
+            //    row["col2"] = "";
+            //    row["col3"] = x[i];
+            //    //row["col4"] = "";
+            //    data[i] = row;
+            //}
+            //var baseCaseSource = {
+            //    localData: data,
+            //    dataType: "array",
+            //    dataFields:
+            //    [
+            //        { name: 'col1', type: 'string' },
+            //        { name: 'col2', type: 'string' },
+            //        { name: 'col3', type: 'string' },
+            //        //{ name: 'col4', type: 'string' }
+            //    ]
+            //};
+            
+            //var createGridEditor = function(row, baseCaseIndex, cellValue, editor, cellText, width, height)
+            //{
+            //    console.log(cellValue);
+            //    // construct the editor.
+            //    if(row == 0){
+            //        var inputElement = $("<input/>").prependTo(editor);
+            //        inputElement.jqxInput({placeHolder:"Enter Name", width: width, height: height});
+            //    }
+            //    else if (row == 1) {
+            //        var sourceEnvs = [];
+            //        for (var idx = 0; idx < environments.length; ++idx) {
+            //            sourceEnvs.push(environments[idx]["name"]);
+            //        }
+            //        env_dropdown = editor.jqxDropDownList({autoDropDownHeight: true,  width: width, source: sourceEnvs});
+            //        env_dropdown.bind("select", function(event) {
+            //            var dataModelEnvironment = base_cases[baseCaseIndex]["environment"]
+            //            var selectedEnvironment = available_environments[event.args.index]["id"];
+            //            if(dataModelEnvironment != selectedEnvironment)
+            //            {
+            //                base_cases[baseCaseIndex]["environment"] = selectedEnvironment    
+            //                SetEnvironmentId(baseCaseIndex, selectedEnvironment);
+            //            }
+            //        });
+            //    }
+            //    else if(row == 2)
+            //    {
+            //        editor.jqxNumberInput({ decimalDigits: 0, inputMode: 'simple',  width: width, height: height, spinButtons: false });
+            //    }
+            //    else if (row == 3) {
+            //        //editor.jqxNumberInput({ decimalDigits: 0, readOnly: true, inputMode: 'simple', width: width, height: height, spinButtons: false });
+            //    }
+            //}
+
+            //var initGridEditor = function (row, cellValue, editor, cellText, width, height) {
+            //    // set the editor's current value. The callback is called each time the editor is displayed.
+            //    if (row == 1) {
+            //        editor.jqxDropDownList('selectItem', cellValue);
+            //    }
+            //}
+
+            //var gridEditorValue = function (row, cellValue, editor) {
+            //    //console.log(editor.val());
+            //    if(row == 0){
+            //        //console.log(editor.find('input').val());
+            //        return editor.find('input').val();
+            //    }
+
+            //    return editor.val();
+            //}
+
+            //var colCount = 3 + numBaseCases;
+            //console.log("colCount is "+ colCount);
+            //if (colCount > 3)
+            //{
+            //    var result = new Array();
+            //    var x = ["Name", "Environment", "Time"];
+            //    for (var i = 0; i < 3; i++)
+            //    {
+            //        var newRow = new Array();
+            //        newRow.push(0);
+            //        newRow.push(0);
+            //        newRow.push(0);
+            //        newRow['col1'] = "";
+            //        newRow["col2"] = "";
+            //        newRow["col3"] = x[i];
+            //        for (var j = 0; j < numBaseCases; j++) {
+            //            if (i == 0)
+            //                newRow.push(base_cases[j]["name"]);
+            //            else if (i == 1)
+            //            {
+            //                var envName = "";
+            //                for (var envIdx = 0; envIdx < environments.length; envIdx++)
+            //                {
+            //                    if (environments[envIdx]["id"] == base_cases[j]["environment"])
+            //                    {
+            //                        envName = environments[envIdx]["name"];
+            //                        break;
+            //                    }
+            //                }
+            //                newRow.push(envName);
+            //            }
+            //            else if (i == 2)
+            //                newRow.push(base_cases[j]["time"]);
+            //            //else if (i == 3)
+            //                //newRow.push(base_cases[j]["phase-angle"]);
+            //        }
+            //        result[i] = newRow;
+            //    }
+
+            //    var df = new Array();
+            //    df[0] = { name: 'col1', type: 'string' };
+            //    df[1] = { name: 'col2', type: 'string' };
+            //    df[2] = { name: 'col3', type: 'string' };
+
+            //    for (var k = 3; k < colCount; k++) {
+            //        df[k] = { name: k, type: 'string' };
+            //    }
+                
+            //    var baseCaseSource = {
+            //        localData: result,
+            //        dataType: "array",
+            //        dataFields:df
+            //    };
+                
+            //    var columnsBaseCaseGrid = new Array();
+            //    columnsBaseCaseGrid[0] = { text: '', dataField: 'col1', editable: false, width: col1width, pinned: true },
+            //    columnsBaseCaseGrid[1] = { text: '', dataField: 'col2', editable: false, width: col2width, pinned: true },
+            //    columnsBaseCaseGrid[2] = { text: '', dataField: 'col3', editable: false, width: col3width, pinned: true };
+            //    var getCreateGridEditorFunction = function(baseCaseIndex) {
+            //        return function(row, cellValue, editor, cellText, width, height) {
+            //            createGridEditor(row, baseCaseIndex, cellValue, editor, cellText, width, height);
+            //        };
+            //    }
+            //    for (var i = 3; i < colCount; i++) {
+            //        var baseCaseIndex = i-3;
+            //        columnsBaseCaseGrid[i] = { text: 'Base Case', width: colNwidth, columntype: 'custom', createeditor: getCreateGridEditorFunction(baseCaseIndex), initeditor: initGridEditor, geteditorvalue: gridEditorValue, datafield: BaseGridInitialCol, };
+            //    }
+            //}
+            //else
+            //{
+            //    var BaseGridInitialCol = 3;
+            //    var columnsBaseCaseGrid = [
+            //            { text: '', dataField: 'col1', editable: false, width: col1width, pinned: true },
+            //            { text: '', dataField: 'col2', editable: false, width: col2width, pinned: true },
+            //            { text: '', dataField: 'col3', editable: false, width: col3width, pinned: true },
+            //            //{ text: 'Base Case', width: '7%', columntype: 'custom', createeditor: createGridEditor, initeditor: initGridEditor, geteditorvalue: gridEditorValue, datafield: BaseGridInitialCol, }
+            //    ];
+            //}
+            
+            //var BaseCaseDataAdapter = new $.jqx.dataAdapter(baseCaseSource);
+            //$('#baseCasesGrid').jqxGrid({
+            //    width: '100%',
+            //    source: BaseCaseDataAdapter,
+            //    editable: true,
+            //    columns: columnsBaseCaseGrid,
+            //    selectionmode: 'singlerow'
+            //});
+            //--------------------------Base Case Grid-------------------------//
+            
+            
+            for (var i = 0; i < intialRows; i++) {
+                var row = {};
+                row["1"] = firstCol[i];     //ith row's[1] = firsCol[i];
+                row["2"] = secondCol[i];    //ith row's[2] = firsCol[i];
+                row["3"] = thirdCol[i];     //ith row's[3] = firsCol[i];
+                row["4"] = fourthCol[i];    //ith row's[4] = firsCol[i];
+                data[i] = row;
+                if(i >= 7)
+                {
+                    data[i] = generateNewRow(i-5);
+                }
+            }
+            //console.log(data);
+            var baseCaseSource =
+            {
+                localData: data,
+                dataType: "array",
+                dataFields:
+                [
+                    { name: '1', type: 'string' },
+                    { name: '2', type: 'string' },
+                    { name: '3', type: 'string' },
+                    { name: '4', type: 'string' }
+                ]
+            };
+
+            
+            if (initialCols > 4)
+            {
+                columnsBaseCaseGrid[0] = { datafield: '1', text: '', width: '3%', columntype: 'custom', editable: false, pinned: true, cellsrenderer: cellsrenderer1stCol, cellclassname: cellclassForFirstCol };
+                columnsBaseCaseGrid[1] = { datafield: '2', text: '', width: '10%', columntype: 'custom', pinned: true, createeditor: createGridEditorForSecondCol, geteditorvalue: gridEditorValueForSecondCol, cellclassname: cellclassForSecondCol, cellbeginedit: cellbegineditForSecondCol };
+                columnsBaseCaseGrid[2] = { datafield: '3', text: '', width: '10%', columntype: 'custom', pinned: true, createeditor: createGridEditorForThirdCol, initeditor: initGridEditorForThirdCol, geteditorvalue: gridEditorValueForThirdCol, cellclassname: cellclassForThirdCol, cellbeginedit: cellbegineditForThirdCol };
+                columnsBaseCaseGrid[3] = { datafield: '4', text: 'Base Case', width: '10%', columntype: 'custom', createeditor: createGridEditorForFourthCol, initeditor: initGridEditorForFourthCol, geteditorvalue: gridEditorValueForFourthCol, cellbeginedit: cellbegineditForFourthCol, renderer: headerRendererForFourthCol, cellclassname: cellclassForFourthCol }
+
+                for (var col = 4; col < initialCols; col++)
+                {
+                    var temp = col + 1;
+                    var dataFieldName = "" + temp;
+                    columnsBaseCaseGrid[col] = { datafield: dataFieldName, text: 'Base Case', width: '10%', columntype: 'custom', createeditor: createGridEditorForFourthCol, initeditor: initGridEditorForFourthCol, geteditorvalue: gridEditorValueForFourthCol, cellbeginedit: cellbegineditForFourthCol, renderer: headerRendererForFourthCol, cellclassname: cellclassForFourthCol }
+                }
+
+                //updating "data" with initial values.
+                for(var r = 0 ; r < intialRows; r++)
+                {
+                    for(var c = 0 ; c <= initialCols; c++)
+                    {
+                        var random1 = Math.floor((Math.random() * 2) + 1);
+                        var random2 = Math.floor((Math.random() * 100) + 1) / 10;
+                        if (r == 4)                 //data for complete row 4 will be empty string otherwise it comes out as UNDEFINED in csv
+                        {
+                            var colName = "" + c;
+                            data[r][colName] = "";
+                        }
+                        if (r == 5 && c > 3)        //data for row 5 but col 3 onwards will be empty string otherwise it comes out as UNDEFINED in csv
+                        {
+                            var colName = "" + c;
+                            data[r][colName] = "";
+                        }
+                        if (r < 4 && c >= 4)        //deals with upper part of the grid i.e. NAME,ENV, TIME/FREQ, PHASE ANGLE
+                        {
+                            var colName = "" + c;
+                            if (r == 0)
+                                data[r][colName] = "a";
+                            else if (r == 1)
+                                data[r][colName] = envType[random1 - 1];
+                            else if (r == 2 || r == 3)
+                            {
+                                if (data[1][colName] == envType[0])
+                                {
+                                    data[3][colName] = "";
+                                    data[2][colName] = random2;
+                                }
+                                else
+                                {
+                                    data[r][colName] = random2;
+                                }
+                            }
+                        }
+
+                        if(r >= 6 && c >= 2 )       //deals with lower part of the grid i.e. combinations.
+                        {
+                            var colName = "" + c;
+                            if (c == 2)
+                                data[r][colName] = "combo Name";
+                            else if (c == 3)
+                                data[r][colName] = combinationTypes[random1 - 1];
+                            else
+                                data[r][colName] = random2;
+                        }
+                    }
+                }
+
+                console.log(data);
+
+                var df = new Array();
+                df[0] = { name: '1', type: 'string' };
+                df[1] = { name: '2', type: 'string' };
+                df[2] = { name: '3', type: 'string' };
+
+                for (var k = 4; k <= initialCols; k++) {
+                    df[k] = { name: k, type: 'string' };
+                }
+
+                baseCaseSource =
+                {
+                    localData: data,
+                    dataType: "array",
+                    dataFields:df
+                };
+            }
+            else
+            {
+                columnsBaseCaseGrid = [
+                   { datafield: '1', text: '', width: '3%', columntype: 'custom', editable: false, pinned: true, cellsrenderer: cellsrenderer1stCol, cellclassname: cellclassForFirstCol },
+                   { datafield: '2', text: '', width: '10%', columntype: 'custom', pinned: true, createeditor: createGridEditorForSecondCol, geteditorvalue: gridEditorValueForSecondCol, cellclassname: cellclassForSecondCol, cellbeginedit: cellbegineditForSecondCol },
+                   { datafield: '3', text: '', width: '10%', columntype: 'custom', pinned: true, createeditor: createGridEditorForThirdCol, initeditor: initGridEditorForThirdCol, geteditorvalue: gridEditorValueForThirdCol, cellclassname: cellclassForThirdCol, cellbeginedit: cellbegineditForThirdCol },
+                   { datafield: '4', text: 'Base Case', width: '10%', columntype: 'custom', createeditor: createGridEditorForFourthCol, initeditor: initGridEditorForFourthCol, geteditorvalue: gridEditorValueForFourthCol, cellbeginedit: cellbegineditForFourthCol, renderer: headerRendererForFourthCol, cellclassname: cellclassForFourthCol },
+                ];
+            }
+
+            var BaseCaseDataAdapter = new $.jqx.dataAdapter(baseCaseSource);
+            $('#baseCasesGrid').jqxGrid({
+                width: '90%',
+                source: BaseCaseDataAdapter,
+                editable: true,
+                columns: columnsBaseCaseGrid,
+                selectionmode: 'multiplecellsextended'
+            });
+
+            //total num of rows
+            var datainformations = $('#baseCasesGrid').jqxGrid('getdatainformation');
+            combinationNameCounter = datainformations.rowscount - 5;
+            //console.log("total rows: " + datainformations.rowscount);
+
+            //total num of cols
+            var initialCols1 = $("#baseCasesGrid").jqxGrid('columns').records.length;
+            //console.log("total cols: " + initialCols1);
+
+            //-------------------------Combination Grid------------------------//
+            //var data = generatedata(20);
+            //var combinationTypes =
+            //[
+            //    "Linear","Quadratic"
+            //];
+            //if (colCount > 3)
+            //{
+            //    var columnsCombinationGrid = new Array();
+            //    columnsCombinationGrid[0] = {
+            //        text: '#', sortable: false, filterable: false, editable: false, groupable: false, draggable: false, resizable: false, pinned: true, dataField: 'col1', columntype: 'number', width: col1width,
+            //        cellsrenderer: function (row, column, value) {
+            //            return "<div style='margin:4px;'>" + (value + 1) + "</div>";
+            //        }
+            //    };
+
+            //    columnsCombinationGrid[1] = {
+            //        text: 'Combination Name', placeHolder: "Combination ", sortable: false, filterable: false, pinned: true, editable: true, groupable: false, draggable: false, resizable: false, dataField: 'col2', columntype: 'text', width: col2width,
+            //        //cellsrenderer: function (row, column, value) {
+            //        //return "<div style='margin:4px;'>Combination " + (value + 1) + "</div>";
+            //        //}
+            //    };
+
+            //    columnsCombinationGrid[2] = {
+            //        text: 'Type', columntype: 'dropdownlist', datafield: 'col3', width: col3width, pinned: true,
+            //        createeditor: function (row, column, editor) {
+            //            // assign a new data source to the dropdownlist.
+            //            var list = combinationTypes;
+            //            type_dropdown = editor.jqxDropDownList({ autoDropDownHeight: true, source: list });
+            //            type_dropdown.bind("select", function(event) {
+            //                var dataModelType = load_combinations[row]["type"]
+            //                if(event.args.item != null){
+            //                    var selectedValue = event.args.item.value
+
+            //                    var selectedType = 0
+            //                    if(selectedValue == "Linear") selectedType = 0;
+            //                    else if (selectedValue == "Quadratic") selectedType = 1;
+
+            //                    if(dataModelType != selectedType)
+            //                    {
+            //                        load_combinations[row]["type"] = selectedType
+            //                        SetComboType(row, selectedType);
+            //                    }
+            //                }
+            //            });
+            //        },
+            //        // update the editor's value before saving it.
+            //        cellvaluechanging: function (row, column, columntype, oldvalue, newvalue) {
+            //            // return the old value, if the new value is empty.
+            //            if (newvalue == "") return oldvalue;
+            //        }
+            //    };
+
+            //    for(var i = 3; i < colCount; i++)
+            //    {
+            //        columnsCombinationGrid[i] = { text: 'Coefficient', dataField: i + 1, width: colNwidth, columntype: 'numberinput', cellsformat: 'd' };
+            //    }
+            //}
+            //else
+            //{
+            //    var CombinationGridInitialCol = 4;
+            //    var columnsCombinationGrid =
+            //        [
+            //            {
+            //                text: '#', sortable: false, filterable: false, editable: false, groupable: false, draggable: false, resizable: false, pinned: true, dataField: 'col1', columntype: 'number', width: col1width,
+            //                cellsrenderer: function (row, column, value) {
+            //                    return "<div style='margin:4px;'>" + (value + 1) + "</div>";
+            //                }
+            //            },
+            //            {
+            //                text: 'Combination Name', placeHolder: "Combination ", sortable: false, filterable: false, pinned: true, editable: true, groupable: false, draggable: false, resizable: false, dataField: 'col2', columntype: 'text', width: col2width,
+            //                //cellsrenderer: function (row, column, value) {
+            //                //return "<div style='margin:4px;'>Combination " + (value + 1) + "</div>";
+            //                //}
+            //            },
+            //            {
+            //                text: 'Type', columntype: 'dropdownlist', datafield: 'col3', width: col3width, pinned: true,
+            //                createeditor: function (row, column, editor) {
+            //                    // assign a new data source to the dropdownlist.
+            //                    var list = combinationTypes;
+            //                    editor.jqxDropDownList({ autoDropDownHeight: true, source: list });
+            //                },
+            //                // update the editor's value before saving it.
+            //                cellvaluechanging: function (row, column, columntype, oldvalue, newvalue) {
+            //                    // return the old value, if the new value is empty.
+            //                    if (newvalue == "") return oldvalue;
+            //                }
+            //            },
+            //            //{ text: 'Value', dataField: CombinationGridInitialCol, width: '7%', columntype: 'numberinput', cellsformat: 'd' }
+            //        ];
+            //}
+            
+            //var combinationSource = {};
+            //var generaterow = function (i) {
+            //    var row = {};
+            //    row['col2'] = "Combination " + (i+1);
+            //    row["col3"] = combinationTypes[0];
+            //    return row;
+            //}
+
+            //var generaterows = function (rowNum, colCount) {
+            //    var row = {};
+            //    var name = load_combinations[rowNum]["name"];//GetLoadComboName(rowNum);
+            //    if(name === "")
+            //        row['col2'] = "Combination " + (rowNum+1);
+            //    else
+            //        row['col2'] = name;
+
+            //    var comboType = load_combinations[rowNum]["type"];//GetComboType(rowNum);
+            //    if(comboType == 0) row["col3"] = "Linear";
+            //    else if (comboType == 1) row["col3"] = "Quadratic";
+
+            //    for (var idx = 0; idx < load_combinations[rowNum]["bases"].length; ++idx) {
+            //        var base = load_combinations[rowNum]["bases"][idx];
+            //        var base_case_idx = base[0];
+            //        var coeff = base[1];
+            //        row[base_case_idx+4] = coeff;
+            //    }
+            //    return row;
+            //}
+            //var CombinationGridDataAdapter = new $.jqx.dataAdapter(combinationSource);
+            //$("#combinationGrid").jqxGrid({
+            //    //width: '100%',
+            //    //source: CombinationGridDataAdapter,
+            //    //editable: true,
+            //    //selectionmode: 'singlerow',
+            //    //columns: columnsCombinationGrid
+
+            //});
+
+            //var rowCount = load_combinations.length;//RowCount();
+            //var combinationNameCounter2;
+            //if (rowCount > 0)
+            //{
+            //    for (var i = 0; i < rowCount; i++) {
+            //        combinationNameCounter2 = i+1;
+            //        var datarow = generaterows(i,colCount); // use "generaterow(combinationNameCounter)" to get the data when properly hooked up with the object
+            //        var commit = $("#combinationGrid").jqxGrid('addrow', null, datarow);
+            //        combinationNameCounter2 = combinationNameCounter2 + 1;
+            //    }
+            //}
+            //else
+            //{
+            //    combinationNameCounter2 = 1;
+            //}
+        }
+    </script>
+</head>
+<style type="text/css">
+    .jqx-grid-header {
+        height: 26px !important;
+    }
+    /*#btn_AddRow {
+        width:65px;
+        height:25px;
+        font-size:13px;
+    }
+    #btn_AddColumn
+    {
+        width:85px;
+        height:25px;
+        font-size:13px;
+    }
+    #btn_DeleteRow{
+        width:80px;
+        height:25px;
+        font-size:13px;
+    }
+    #btn_DeleteColumn{
+        width:95px;
+        height:25px;
+        font-size:13px;
+    }*/
+    #btn_Import {
+        font-size:13px;
+    }
+    #btn_Export {
+        font-size:13px;
+    }
+    .editedCell
+        {
+            background-color: #e5e5e5 !important;
+            color: White;
+        }
+    .cellClassForFirstCol, .cellClassForSecondCol, .cellClassForThirdCol
+    {
+        background-color: White !important;
+    }
+
+</style>
+<body>
+    <div id="baseCasesGrid"></div>
+    <!--<div id="combinationGrid"></div>-->
+    <br />
+    <div>
+        <!--<input type="button" name="AddR" id="btn_AddRow" value="Add Row">
+        <input type="button" name="AddC" id="btn_AddColumn" value="Add Column">
+        <input type="button" name="DelR" id="btn_DeleteRow" value="Delete Row">
+        <input type="button" name="DelC" id="btn_DeleteColumn" value="Delete Column">-->
+        <input type="button" name="Import" id="btn_Import" value="Import..." style="float:left;">
+        <input type="button" name="Export" id="btn_Export" value="Export..." style="float:left; margin-left:5px;">
+    </div>
+</body>
+</html>
