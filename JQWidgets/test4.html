@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="jqwidgets-ver6.0.6/jqwidgets/styles/jqx.base.css" type="text/css" />
+<script type="text/javascript" src="jqwidgets-ver6.0.6/scripts/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxdata.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxbuttons.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxscrollbar.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxmenu.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxlistbox.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxdropdownlist.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.selection.js"></script> 
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.columnsresize.js"></script> 
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.filter.js"></script> 
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.sort.js"></script>
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.edit.js"></script> 
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.pager.js"></script> 
+<script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.grouping.js"></script>
+<script>
+  $(document).ready(function(){
+    // prepare the data
+    var url = 'data2.json';
+    var source =
+    {
+      datatype: "json",
+      url:url,
+      datafields:[
+        {name:'firstname', type:'string'},
+        {name:'lastname', type:'string'},
+        {name:'productname', type:'string'},
+        {name:'quantity', type:'string'},
+        {name:'price', type:'string'}
+      ],
+
+    };
+    var dataAdapter = new $.jqx.dataAdapter(source);
+    $("#myGrid").jqxGrid(
+    {
+        source: dataAdapter,
+        editable:true,
+        sortable:true,
+        filterable:true,
+        pageable:true,
+        width:"90%",
+        height:"50%",
+        columns: [
+            { text: 'First Name', datafield: 'firstname', width: '10%', editable:false,pinned:true },
+            { text: 'Last Name', datafield: 'lastname', width: '50%',sortable:false },
+            { text: 'Product', datafield: 'productname', width: '18%', filterable:false },
+            { text: 'Quantity', datafield: 'quantity', width: '50%', cellsalign: 'right' },
+            { text: 'Unit Price', datafield: 'price', minwidth: '10%', cellsalign: 'right', cellsformat: 'c2' }
+        ]
+    });
+  });
+</script>
+  </head>
+  <body>
+    <div id="myGrid"></div>
+  </body>
+</html>

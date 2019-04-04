@@ -1,0 +1,53 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="jqwidgets-ver6.0.6/jqwidgets/styles/jqx.base.css" type="text/css" />
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/scripts/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxcore.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxdata.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxbuttons.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxscrollbar.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxmenu.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxlistbox.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxdropdownlist.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.js"></script>
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.selection.js"></script> 
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.columnsresize.js"></script> 
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.filter.js"></script> 
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.sort.js"></script> 
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.pager.js"></script> 
+      <script type="text/javascript" src="jqwidgets-ver6.0.6/jqwidgets/jqxgrid.grouping.js"></script> 
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var url = "data.json";
+        var source = {
+          url : url,
+          datatype: 'json',
+          datafields:[
+            {name:'id',type:'string'},
+            {name:'first_name',type:'string'},
+            {name:'last_name',type:'string'},
+            {name:'email',type:'string'},
+            {name:'gender',type:'string'}
+          ],
+        };
+        var dataAdapter = new $.jqx.dataAdapter(source);
+
+        $("#grid1").jqxGrid(
+            {
+              source:dataAdapter,
+              columns:[
+              {text:"ID", datafield: 'id',width :70, editable:true},
+              {text:"FN", datafield: 'first_name',width :70},
+              {text:"LN", datafield: 'last_name',width :70},
+              {text:"Email", datafield: 'email',width :70},
+              {text:"Gender", datafield: 'gender',width :70},
+              ]
+            });
+        });
+
+      </script>
+  </head>
+  <body>
+    <div id="grid1"></div>
+  </body>
+</html>
