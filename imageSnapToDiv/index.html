@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	html, body, table,tr,td, #mainContainer{
+		height: 100%;
+	}
+#buttons2, #buttons1{
+	position: absolute;
+
+}
+</style>
+<!-- <link rel="stylesheet" type="text/css" href="D:\AnsysDev\parent_folder\CodeDV\DesignSpace\DSPages\ThirdParty\Twitter_bootstrap-3.3.1_css\dist\css/bootstrap.min.css"> -->
+
+<body>
+	<table class="container-fluid">
+		<tr>
+			<td>
+				<div id="mainContainer">
+					<img id="buttons1" src="leftArrow.png">
+					<img id="buttons2" src="rightArrow.png" >
+					<div id="bottom">
+						<input type="checkbox" name="">do not show
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	var div = document.getElementById("mainContainer");
+	var prevBtn = document.getElementById("buttons1");
+	var nextBtn = document.getElementById("buttons2");
+	var img = new Image();
+	var bottomDiv = document.getElementById("bottom");
+
+	img.onload = function()
+	{
+		var height = img.height;
+  		var width = img.width;
+  		nextBtn.style.top = (img.height/2) + "px";
+		nextBtn.style.left = (img.width -50) + "px";
+		prevBtn.style.top = (img.height/2) + "px";
+		prevBtn.style.left = (20) + "px";
+		bottomDiv.style.position = "absolute";
+		bottomDiv.style.top = (img.height + 20) + "px";
+  		console.log(height);
+  		console.log(width);
+	}
+	img.style.width = "100%";
+	img.style.height = "100%";
+	img.style.position = "absolute";
+	img.src = "test.png";
+	
+	div.insertBefore(img,prevBtn);
+
+	resize = function()
+	{
+		nextBtn.style.top = (img.height/2) + "px";
+		nextBtn.style.left = (img.width - 50) + "px";
+		prevBtn.style.top = (img.height/2) + "px";
+		prevBtn.style.left = (20) + "px";
+		bottomDiv.style.top = (img.height + 20) + "px";
+		console.log(nextBtn.style.left);
+	}
+	window.onresize = resize;
+
+
+</script>
+</html>
