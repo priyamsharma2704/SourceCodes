@@ -16,6 +16,8 @@ class Component1 extends Component {
 
     return (
     <div>
+      -----Component-----
+      <br/>
       Counter: {this.props.p1}
       <div>{this.props.p2}</div>
       <div>{this.props.p3}</div>
