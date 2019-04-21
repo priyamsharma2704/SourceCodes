@@ -54,12 +54,21 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-        <Form getInput={this.getInputValue} 
-          inputValue={this.state.inputValue}
-          handleInputChange={this.HandleInputChange}></Form>
-        <List handleClick={this.HandleClick} 
-          taskList={this.state.tasks}></List>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+          </div>
+          <div className="col-sm taskList">
+          <div className="d-flex justify-content-center">Todo List</div>
+            <Form getInput={this.getInputValue} 
+              inputValue={this.state.inputValue}
+              handleInputChange={this.HandleInputChange}></Form>
+            <List handleClick={this.HandleClick} 
+              taskList={this.state.tasks}></List>
+          </div>
+          <div className="col-sm">
+          </div>
+        </div>
       </div>
     );
   }

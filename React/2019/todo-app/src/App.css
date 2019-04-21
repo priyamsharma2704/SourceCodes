@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+.taskList{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin-top:20px;
+}
