@@ -6,9 +6,16 @@ class Form extends React.Component
   {    
     return(
       <form onSubmit={this.props.getInput}>
-        <input type="text" placeholder="Enter the task" name="task" value={this.props.inputValue}
+        <div className="input-group mb-3">
+        <input className="form-control" type="text" placeholder="Enter the task" name="task" value={this.props.inputValue}
         onChange={this.props.handleInputChange}/>
-        <button >Submit</button>
+          <div className="input-group-append">
+          <button className="btn btn-outline-secondary" >Submit</button>
+          </div>
+        </div>
+
+
+        
       </form>
     );
   }

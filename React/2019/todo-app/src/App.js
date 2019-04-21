@@ -14,19 +14,20 @@ class App extends Component {
     e.preventDefault();
 
     const inputVal = e.target.elements.task.value;
-    const dummyTask = {
-      value : inputVal,
-      done:false
-    }
-    const todos = this.state.tasks;
-    todos.push(dummyTask);
 
     if(inputVal)
     {
+      const dummyTask = {
+        value : inputVal,
+        done:false
+      }
+      const todos = this.state.tasks;
+      todos.push(dummyTask);
+
       this.setState(
         {
           tasks:todos,
-          inputValue:" "
+          inputValue:""
         }
       );
     }

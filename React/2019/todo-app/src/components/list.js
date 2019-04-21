@@ -9,8 +9,12 @@ class List extends React.Component
       <div>
         {this.props.taskList.map((task, index)=>{
           return(
-            <div key={index}>
-              <span onClick={()=>this.props.handleClick(index)} style={{textDecoration: task.done ? 'line-through':'none'}}>{task.value}</span>
+            <div className="list-group-item" 
+              key={index}
+              style={{cursor:'pointer'}}
+              title="Click to mark as done."
+              onClick={()=>this.props.handleClick(index)}>
+              <span style={{textDecoration: task.done ? 'line-through':'none',color:task.done? "red" : "black"}}>{task.value}</span>
             </div>
             );
         })}
