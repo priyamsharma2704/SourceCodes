@@ -44,19 +44,22 @@ class App extends React.Component
     const inputValueForLocation = e.target.elements.ninjaLocation.value;
 
     //console.log(inputValueForName, inputValueForColor, inputValueForLocation)
-    const tempObj = {name:inputValueForName, color:inputValueForColor,location:inputValueForLocation};
+    if(inputValueForName && inputValueForColor && inputValueForLocation)
+    {
+      const tempObj = {name:inputValueForName, color:inputValueForColor,location:inputValueForLocation};
 
-    const tempNinjaObj = this.state.ninjas;
-    tempNinjaObj.push(tempObj);
-
-    this.setState(
-      {
-        ninjas:tempNinjaObj,
-        inputName:"",
-        inputColor:"",
-        inputLocation:""
-      }
-    );
+      const tempNinjaObj = this.state.ninjas;
+      tempNinjaObj.push(tempObj);
+  
+      this.setState(
+        {
+          ninjas:tempNinjaObj,
+          inputName:"",
+          inputColor:"",
+          inputLocation:""
+        }
+      );
+    }
   }
 
   render()
