@@ -1,6 +1,16 @@
 import React from 'react';
 import './App.css';
 import NinjaList from './components/ninjasList';
+import * as firebase from 'firebase';
+const config = {
+  apiKey: "AIzaSyDtLl4bVQTTsZZcQNCn5Q7DvzgzAKKTinw",
+  authDomain: "firestore-cafes.firebaseapp.com",
+  databaseURL: "https://firestore-cafes.firebaseio.com",
+  projectId: "firestore-cafes",
+  storageBucket: "firestore-cafes.appspot.com",
+  messagingSenderId: "464289815464"
+};
+const app =  firebase.initializeApp(config);
 
 class App extends React.Component
 {
@@ -38,10 +48,17 @@ class App extends React.Component
 
   HandleOnSubmit=(e)=>{
     e.preventDefault();
-    //console.log("on submit");
+
     const inputValueForName = e.target.elements.ninjaName.value;
     const inputValueForColor = e.target.elements.ninjaColor.value;
     const inputValueForLocation = e.target.elements.ninjaLocation.value;
+
+    const db = firebase.firestore();
+    const userRef = db.collection("ninjas").add({
+      name: inputValueForName,
+      color: inputValueForColor,
+      location : inputValueForLocation
+    });  
 
     //console.log(inputValueForName, inputValueForColor, inputValueForLocation)
     if(inputValueForName && inputValueForColor && inputValueForLocation)
