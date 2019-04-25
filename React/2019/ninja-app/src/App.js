@@ -82,17 +82,23 @@ class App extends React.Component
   render()
   {
     return (
-      <div>
-        <NinjaList 
-        handleInputOnChangeForName={this.HandleInputOnChangeForName}
-        handleInputOnChangeForColor={this.HandleInputOnChangeForColor}
-        handleInputOnChangeForLocation={this.HandleInputOnChangeForLocation}
-        handleOnSubmit={this.HandleOnSubmit}
-        ninjasList={this.state.ninjas}
-        nameValue={this.state.inputName}
-        colorValue={this.state.inputColor}
-        locationValue={this.state.inputLocation}
-        ></NinjaList>
+      <div className="container">
+        <div className="row">
+          <div className="col"></div>
+          <div className="col-16 ninjaComponentDiv">
+            <NinjaList
+            handleInputOnChangeForName={this.HandleInputOnChangeForName}
+            handleInputOnChangeForColor={this.HandleInputOnChangeForColor}
+            handleInputOnChangeForLocation={this.HandleInputOnChangeForLocation}
+            handleOnSubmit={this.HandleOnSubmit}
+            ninjasList={this.state.ninjas}
+            nameValue={this.state.inputName}
+            colorValue={this.state.inputColor}
+            locationValue={this.state.inputLocation}
+            ></NinjaList>
+          </div>
+          <div className="col"></div>
+        </div>
       </div>
     );
   }
