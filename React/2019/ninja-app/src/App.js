@@ -54,15 +54,15 @@ class App extends React.Component
     const inputValueForLocation = e.target.elements.ninjaLocation.value;
 
     const db = firebase.firestore();
-    const userRef = db.collection("ninjas").add({
-      name: inputValueForName,
-      color: inputValueForColor,
-      location : inputValueForLocation
-    });  
 
-    //console.log(inputValueForName, inputValueForColor, inputValueForLocation)
     if(inputValueForName && inputValueForColor && inputValueForLocation)
     {
+      const userRef = db.collection("ninjas").add({
+        name: inputValueForName,
+        color: inputValueForColor,
+        location : inputValueForLocation
+      });  
+
       const tempObj = {name:inputValueForName, color:inputValueForColor,location:inputValueForLocation};
 
       const tempNinjaObj = this.state.ninjas;
@@ -77,6 +77,20 @@ class App extends React.Component
         }
       );
     }
+  }
+
+  HandleDelete=(e)=>
+  {
+    e.preventDefault();
+    const tempObj = this.state.ninjas;
+    const index = e.target.id;
+    tempObj.splice(index,1);
+
+    this.setState(
+      {
+        ninjas: tempObj
+      }
+    );
   }
 
   render()
@@ -95,6 +109,7 @@ class App extends React.Component
             nameValue={this.state.inputName}
             colorValue={this.state.inputColor}
             locationValue={this.state.inputLocation}
+            handleDelete={this.HandleDelete}
             ></NinjaList>
           </div>
           <div className="col"></div>

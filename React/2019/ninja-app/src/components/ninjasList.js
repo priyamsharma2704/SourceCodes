@@ -19,7 +19,7 @@ class NinjasList extends React.Component
                 <span className="ninjaButtons">
                   <div className="btn-group btn-group-sm" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-secondary">Edit</button>
-                    <button type="button" className="btn btn-secondary btn btn-danger">Delete</button>
+                    <button type="button" className="btn btn-secondary btn btn-danger" onClick={this.props.handleDelete} id={index}>Delete</button>
                   </div>
                 </span>
               </div>
