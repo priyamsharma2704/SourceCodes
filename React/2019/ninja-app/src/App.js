@@ -11,6 +11,7 @@ const config = {
   messagingSenderId: "464289815464"
 };
 const app =  firebase.initializeApp(config);
+const db = firebase.firestore();
 
 class App extends React.Component
 {
@@ -53,18 +54,21 @@ class App extends React.Component
     const inputValueForColor = e.target.elements.ninjaColor.value;
     const inputValueForLocation = e.target.elements.ninjaLocation.value;
 
-    const db = firebase.firestore();
-
     if(inputValueForName && inputValueForColor && inputValueForLocation)
     {
-      const userRef = db.collection("ninjas").add({
+      // const userRef = db.collection("ninjas").add({
+      //   name: inputValueForName,
+      //   color: inputValueForColor,
+      //   location : inputValueForLocation
+      // });  
+
+      const userRef = db.collection("ninjas").doc(inputValueForName).set({
         name: inputValueForName,
         color: inputValueForColor,
         location : inputValueForLocation
       });  
 
       const tempObj = {name:inputValueForName, color:inputValueForColor,location:inputValueForLocation};
-
       const tempNinjaObj = this.state.ninjas;
       tempNinjaObj.push(tempObj);
   
@@ -84,6 +88,12 @@ class App extends React.Component
     e.preventDefault();
     const tempObj = this.state.ninjas;
     const index = e.target.id;
+    console.log(tempObj[index].name);
+    //delete from firebase 
+    const tempName = tempObj[index].name;
+    db.collection("ninjas").doc(tempName).delete();
+
+    //delete the item from object
     tempObj.splice(index,1);
 
     this.setState(
@@ -91,6 +101,7 @@ class App extends React.Component
         ninjas: tempObj
       }
     );
+    
   }
 
   render()
