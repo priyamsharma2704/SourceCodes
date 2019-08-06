@@ -52,3 +52,14 @@ for(i in s)
 var s = "w3resource.com"
 console.log(s.indexOf("u"))
 console.log(s.lastIndexOf("u"))
+
+
+	x = -321
+    x= x.toString();
+    
+    x = x.split("").reverse().join("");
+    x = parseInt(x);
+    if(x < 0)
+        console.log("asd");
+    else
+       console.log(x);

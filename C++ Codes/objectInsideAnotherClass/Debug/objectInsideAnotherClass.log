@@ -1,0 +1,3 @@
+﻿  objectInsideAnotherClass.cpp
+D:\SourceCodes\C++ Codes\objectInsideAnotherClass\objectInsideAnotherClass.cpp(52,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+  objectInsideAnotherClass.vcxproj -> D:\SourceCodes\C++ Codes\objectInsideAnotherClass\Debug\objectInsideAnotherClass.exe
