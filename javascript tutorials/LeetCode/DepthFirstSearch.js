@@ -1,4 +1,11 @@
-
+//output : A B D E F C
+/*
+            A
+           / \
+          B   C
+         / \   \
+        D   E ->F
+*/
 var tree2 = [
     { value: "A", left: 1, right: 2 },  //0
     { value: "B", left: 3, right: 4 },  //1
